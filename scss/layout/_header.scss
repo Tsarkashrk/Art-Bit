@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 30px;
+  margin: var(--mobile-margin-around);
+
+  &__img { 
+    width: 36px;
+  }
+
+  &__menu {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__btn {
+    display: none;
+  }
+}
