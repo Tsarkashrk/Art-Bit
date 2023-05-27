@@ -1,4 +1,8 @@
 .header {
+  max-width: var(--max-width);
+
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,7 +11,31 @@
   margin: var(--mobile-margin-around);
 
   &__img { 
+    padding-top: 5px;
     width: 36px;
+  }
+
+  &__blur {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+
+    background: rgba(16, 41, 33, 0.34);
+
+    filter: blur(42px);
+  }
+
+  &__nav {
+    display: none;
+
+    font-family: var(--medium-font);
+    font-size: 16px;
+
+    color: var(--primary-color);
+  }
+
+  &__btn {
+    display: none;
   }
 
   &__menu {
@@ -15,12 +43,121 @@
   }
 }
 
-@media screen and (min-width: 375px) {
-  .header__nav {
-    display: none;
-  }
+@media screen and (min-width: 834px) {
+  .header {
+    margin: 0 auto;
+    padding: 30px 13px 105px 13px;
 
-  .header__btn {
-    display: none;
+    &__img {
+      width: 50px;
+    }
+
+    &__blur {
+      top: 15px;
+      left: 0px;
+    }
+
+    &__icon {
+      width: 25px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 90px;
+
+    &__blur {
+      left: 0px;
+    }
+
+    &__nav {
+      display: flex;
+    }
+
+    &__list {
+      display: flex;
+      gap: 55px;
+
+      cursor: pointer;
+    }
+
+    &__item {
+      position: relative;
+
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--description-color);
+  
+        &::after {
+          content: '';
+
+          position:absolute;
+          bottom: -5px;
+          left: 0;
+
+          width: 34px;
+          height: 2px;
+
+          background: var(--secondary-color);
+    
+          color: var(--description-color);
+        }
+      }
+
+      &:active {
+        color: var(--primary-color);
+      }
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      padding: 8px 10px;
+
+      font-family: var(--semibold-font);
+      font-size: 18px;
+
+      background-color: var(--secondary-color);
+
+      border: 2px solid var(--secondary-color);
+
+      cursor: pointer;
+
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+
+        border-color: var(--description-color);
+  
+        color: var(--secondary-color);
+
+        & .header__user-icon {
+          stroke: var(--secondary-color);
+        }
+      }
+
+      &:active {
+        color: var(--description-color);
+
+        & .header__user-icon {
+          stroke: var(--description-color);
+        }
+      }
+    }
+
+    &__user-icon {
+      width: 16px;
+
+      stroke: black;
+    }
+
+    &__menu {
+      display: none;
+    }
   }
 }
