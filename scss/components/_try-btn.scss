@@ -1,4 +1,4 @@
-.try-link {
+.try-btn__link {
   position: relative;
 
   padding: 17px 27px;
@@ -37,9 +37,15 @@
     border-color: var(--description-color);
     color: var(--description-color);
   }
+}
 
-  &__title {
-    position: relative;
-    z-index: 3;
+.try-btn__title {
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (min-width: 834px) {
+  .try-link {
+    font-size: 20px;
   }
 }

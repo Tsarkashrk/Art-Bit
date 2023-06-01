@@ -1,0 +1,78 @@
+.tokens {
+  max-width: var(--max-width);
+  padding: var(--mg-between-sections) 13px 100px 13px;
+  margin: 0 auto;
+
+  &__elements-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 5%;  
+
+    padding: 43px 0 60px 0;
+  }
+
+  &__element {
+    position: relative;
+
+    text-align: center;
+
+    padding: 21px 0;
+
+    border: 2px solid var(--page-color);
+    
+    color: var(--primary-color);
+
+    &::before {
+      content: '';
+
+      position: absolute;
+
+      top: -2px;
+      left: 40px;
+
+      width: calc(100% - 80px);
+      height: calc(100% + 4px);
+
+      background-color: var(--background-color-prm);
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    width: 60px;
+  }
+
+  &__name {
+    position: relative;
+
+    margin: 17px auto 2px;
+
+    font-family: var(--semibold-font);
+    font-size: 26px;
+  }
+
+  &__description {
+    position: relative;
+
+    font-family: var(--regular-font);
+
+    color: var(--page-color);
+  }
+
+  &__try-btn {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 834px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .tokens {
+    padding: var(--mg-between-sections) 13px;
+  }
+}

@@ -29,7 +29,6 @@
     display: none;
 
     font-family: var(--medium-font);
-    font-size: 16px;
 
     color: var(--primary-color);
   }
@@ -46,7 +45,7 @@
 @media screen and (min-width: 834px) {
   .header {
     margin: 0 auto;
-    padding: 30px 13px 105px 13px;
+    padding: 30px 13px 90px 13px;
 
     &__img {
       width: 50px;
@@ -65,7 +64,7 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    padding-bottom: 90px;
+    padding:30px 13px 90px 13px;
 
     &__blur {
       left: 0px;
@@ -73,6 +72,8 @@
 
     &__nav {
       display: flex;
+
+      font-size: 16px;
     }
 
     &__list {

@@ -1,0 +1,32 @@
+.text-group {
+
+  &__page {
+    font-family: var(--regular-font);
+    font-size: 13px;
+
+    color: var(--page-color);
+  }
+
+  &__title {
+    font-family: var(--regular-font);
+    font-size: 19px;
+
+    color: var(--description-color);
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .text-group {
+
+    &__page {
+      font-size: 22px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

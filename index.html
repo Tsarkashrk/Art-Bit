@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/main.css">
   <title>Art Bit</title>
 </head>
@@ -13,6 +14,7 @@
       <img class="header__img" src="./media/logo.svg" alt="logo">
       <img class="header__blur" src="./media/logo.svg" alt="">
     </a>
+
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">Преимущества</li>
@@ -22,49 +24,235 @@
         <li class="header__item">Разработчикам</li>
       </ul>
     </nav>
+
     <button class="header__btn" >
       Регистрация 
       <svg class="header__user-icon" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17 19C17 16.2386 13.4183 14 9 14C4.58172 14 1 16.2386 1 19M9 11C6.23858 11 4 8.76142 4 6C4 3.23858 6.23858 1 9 1C11.7614 1 14 3.23858 14 6C14 8.76142 11.7614 11 9 11Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>  
       </svg>
     </button>
+
     <div class="header__menu">
       <img class="header__icon" src="./media/menu.svg" alt="">
     </div>
   </header>
+
   <main class="main">
     <section class="greeting">
       <div class="greeting__companies">
         <img class="greeting__img" src="./media/platforms.svg" alt="">
       </div>
+
       <div class="greeting__info">
         <h1 class="greeting__title">
           <span class="greeting__title--white">Поиск прибыльных р2р объявлений</span>
           <span class="greeting__title--green">обмена</span>
         </h1>
         <p class="greeting__description">Крипто и фиат-активов</p>
-        <a href="#" class="try-link">
-          <span class="try-link__title">
+
+        <div class="greeting__try-btn">
+          <a href="#" class="try-btn__link">
+            <span class="try-btn__title">
+              Попробовать
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="platforms">
+      <div class="text-group">
+        <p class="text-group__page">01.</p>
+        <p class="text-group__title">5 площадок</p>
+      </div>
+
+      <div class="image-slider swiper">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/binance.svg" alt="">
+              <p class="image-slider__name">Binance</p>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/okx.svg" alt="">
+              <p class="image-slider__name">OKX</p>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/bybit.svg" alt="">
+              <p class="image-slider__name">ByBit</p>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/huobi.svg" alt="">
+              <p class="image-slider__name">Huobi</p>
+            </div>
+          </div>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/huobi2.svg" alt="">
+              <p class="image-slider__name">Huobi</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination"></div>
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+
+      <div class="platforms__list">
+        <div class="platforms__element">
+          <img src="./media/binance.svg" alt="" class="platforms__image">
+          <p class="platforms__title">Binance</p>
+        </div>
+        <div class="platforms__element">
+          <img src="./media/okx.svg" alt="" class="platforms__image">
+          <p class="platforms__title">OKX</p>
+        </div>
+        <div class="platforms__element">
+          <img src="./media/bybit.svg" alt="" class="platforms__image">
+          <p class="platforms__title">ByBit</p>
+        </div>
+        <div class="platforms__element">
+          <img src="./media/huobi.svg" alt="" class="platforms__image">
+          <p class="platforms__title">Huobi</p>
+        </div>
+        <div class="platforms__element">
+          <img src="./media/huobi2.svg" alt="" class="platforms__image">
+          <p class="platforms__title">Huobi</p>
+        </div>
+    </section>
+
+    <section class="tokens">
+      <div class="text-group">
+        <p class="text-group__page">02.</p>
+        <p class="text-group__title">5 токенов</p>
+      </div>
+
+      <div class="tokens__elements-group">
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/binance-token.svg" alt="">
+          <p class="tokens__name">Binance</p>
+          <p class="tokens__description">Подробнее</p>
+        </div>
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/okx-token.svg" alt="">
+          <p class="tokens__name">OKX</p>
+          <p class="tokens__description">Подробнее</p>
+        </div>
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/bybit-token.svg" alt="">
+          <p class="tokens__name">Bybit</p>
+          <p class="tokens__description">Подробнее</p>
+        </div>
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/bybit-token2.svg" alt="">
+          <p class="tokens__name">Bybit</p>
+          <p class="tokens__description">Подробнее</p>
+        </div>
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/huobi-token.svg" alt="">
+          <p class="tokens__name">Huobi</p>
+          <p class="tokens__description">Подробнее</p>
+        </div>
+      </div>
+
+      <div class="tokens__try-btn">
+        <a href="#" class="try-btn__link">
+          <span class="try-btn__title">
             Попробовать
           </span>
         </a>
       </div>
     </section>
-    <section class="platforms">
+
+    <section class="banks">
       <div class="text-group">
-        <p class="text-group__page"></p>
-        <p class="text-group__title"></p>
+        <p class="text-group__page">03.</p>
+        <p class="text-group__title">Банки</p>
       </div>
-      <div class="platforms__companies">
-        
-        <p class="platforms__name"></p>
-        <p class="platforms__name"></p>
-        <p class="platforms__name"></p>
-        <p class="platforms__name"></p>
-        <p class="platforms__name"></p>
+
+      <div class="banks__elements-group">
+        <div class="banks__element">
+          <img class="banks__image" src="./media/Group 315.svg" alt="">
+          <p class="banks__name">Сбербанк</p>
+        </div>
+        <div class="banks__element">
+          <img class="banks__image" src="./media/Group 316.svg" alt="">
+          <p class="banks__name">Тинькоф</p>
+        </div>
+        <div class="banks__element">
+          <img class="banks__image" src="./media/Group 317.svg" alt="">
+          <p class="banks__name">QIWI</p>
+        </div>
+        <div class="banks__element">
+          <img class="banks__image" src="./media/Group 318.svg" alt="">
+          <p class="banks__name">Райфайзен</p>
+        </div>
+        <div class="banks__element">
+          <img class="banks__image" src="./media/Group 319.svg" alt="">
+          <p class="banks__name">Альфа</p>
+        </div>
+      </div>
+
+      <div class="banks__description-group">
+        <img class="banks__arrow-left" src="./media/arrowLeft.svg" alt="">
+        <p class="banks__description">более 30 банков</p>
+        <img class="banks__arrow-right" src="./media/arrowRight.svg" alt="">
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="text-group">
+        <p class="text-group__page">04.</p>
+        <p class="text-group__title">Работа</p>
+      </div>
+
+      <div class="work__info">
+        <div class="work__preview">
+          <img class="work__image" src="./media/Group 321.svg" alt="">
+        </div>
+
+        <div class="work__paragraphs">
+          <p class="work__description work__first-paragraph">
+            Высокая скорость работы и
+            <span class="work__description--gray">
+              настраиваемые уведомления
+            </span>
+          </p>
+  
+          <p class="work__description work__second-paragraph">
+            Быстрая реакция = 
+            <span class="work__description--white">
+              Высокая доходность торговли
+            </span>
+          </p>
+
+          <div class="work__try-btn">
+            <a href="#" class="try-btn__link">
+              <span class="try-btn__title">
+                Попробовать
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

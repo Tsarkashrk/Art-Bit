@@ -1,0 +1,41 @@
+.image-slider {
+  margin-top: 40px;
+
+  .image-slider__slide {
+    width: 90px !important;
+  }
+
+  .image-slider__image {
+    width: 90px !important;
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90px !important;
+  }
+
+  &__name {
+    margin: 0 auto;
+    padding-top: 15px;
+
+    font-family: var(--semibold-font);
+    font-size: 14px;
+    
+    color: var(--primary-color);
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .image-slider {
+    display: none;
+  }
+}
+
+.slider .swiper-container {
+  width: 100%;
+  height: 100%;
+}
