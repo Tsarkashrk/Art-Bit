@@ -2,9 +2,11 @@
   --mobile-margin-around: 0 13px;
   --mg-between-sections: 85px;
   --mg-work-section: 33px;
+  --space-bw-box: 20px;
   --max-width: 1226px;
   --background-color-prm: #101014;
   --background-color-scn: #ffffff;
+  --bg-box-color: #000;
   --regular-font: "MontserratRegular";
   --medium-font: "MontserratMedium";
   --semibold-font: "MontserratSemiBold";
@@ -129,7 +131,7 @@ body {
 
 .text-group__page {
   font-family: var(--regular-font);
-  font-size: 13px;
+  font-size: 15px;
   color: var(--page-color);
 }
 .text-group__title {
@@ -524,7 +526,7 @@ body {
 .work {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--mg-between-sections) 13px;
+  padding: var(--mg-between-sections) 13px 20px;
 }
 .work__info {
   display: flex;
@@ -585,4 +587,116 @@ body {
   .work__image {
     min-width: 690px;
   }
+}
+.suitable {
+  max-width: var(--max-width);
+  margin: 0 auto var(--mg-between-sections) auto;
+  padding: 0 13px;
+}
+.suitable__elements-group {
+  margin: 30px 0;
+}
+.suitable__element {
+  padding: var(--space-bw-box);
+  margin-bottom: 30px;
+  background: url(/Art-Bit/media/wrapper.svg) no-repeat center;
+  background-size: 100% 100%;
+}
+.suitable__text-group {
+  top: 0;
+  font-family: var(--regular-font);
+  color: var(--primary-color);
+}
+.suitable__title-group {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  padding-bottom: 30px;
+}
+.suitable__title {
+  font-size: 22px;
+}
+.suitable__definition {
+  padding-bottom: var(--space-bw-box);
+  font-size: 18px;
+}
+.suitable__options {
+  padding-bottom: 6px;
+  font-size: 14px;
+  color: var(--description-color);
+}
+
+@media screen and (min-width: 834px) {
+  .suitable__element {
+    background: url(/Art-Bit/media/wrapper2.svg) no-repeat center;
+    background-size: 100% 100%;
+  }
+  .suitable__title {
+    font-size: 36px;
+  }
+  .suitable__definition {
+    font-size: 20px;
+  }
+  .suitable__options {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .suitable__element {
+    margin-bottom: 60px;
+    background: url(/Art-Bit/media/wrapper3.svg) no-repeat center;
+    background-size: 100% 100%;
+  }
+  .suitable__title {
+    font-size: 36px;
+  }
+  .suitable__definition {
+    font-size: 20px;
+  }
+  .suitable__options {
+    font-size: 16px;
+  }
+}
+.advantages {
+  padding: var(--mg-between-sections) 13px;
+  background-color: var(--background-color-scn);
+}
+.advantages__wrapper {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+.advantages__elements-group {
+  padding-top: 30px;
+}
+.advantages__element {
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+.advantages__element:hover {
+  background-color: var(--bg-box-color);
+}
+.advantages__element:hover .advantages__definition {
+  color: var(--primary-color);
+}
+.advantages__element:hover .advantages__arrow {
+  stroke: var(--primary-color);
+  fill: var(--primary-color);
+}
+.advantages__title-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.advantages__title {
+  font-family: var(--medium-font);
+  color: var(--description-color);
+}
+.advantages__arrow {
+  fill: var(--bg-box-color);
+  stroke: var(--bg-box-color);
+}
+.advantages__definition {
+  font-family: var(--regular-font);
 }

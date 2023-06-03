@@ -1,0 +1,95 @@
+.suitable {
+  max-width: var(--max-width);
+  margin: 0 auto var(--mg-between-sections) auto;
+  padding: 0 13px;
+
+  &__elements-group {
+    margin: 30px 0;
+  }
+
+  &__element {
+    padding: var(--space-bw-box);
+    margin-bottom: 30px;
+
+    background: url(/Art-Bit/media/wrapper.svg) no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  &__text-group {
+    top: 0;
+
+    font-family: var(--regular-font);
+
+    color: var(--primary-color);
+  }
+
+  &__title-group {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 22px;
+  }
+
+  &__definition {
+    padding-bottom: var(--space-bw-box);
+
+    font-size: 18px;
+  }
+
+  &__options {
+    padding-bottom: 6px;
+
+    font-size: 14px;
+
+    color: var(--description-color);
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .suitable {
+    &__element {
+      background: url(/Art-Bit/media/wrapper2.svg) no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__definition {
+      font-size: 20px;
+    }
+
+    &__options {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .suitable {
+    &__element {
+      margin-bottom: 60px;
+
+      background: url(/Art-Bit/media/wrapper3.svg) no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__definition {
+      font-size: 20px;
+    }
+
+    &__options {
+      font-size: 16px;
+    }
+  }
+}

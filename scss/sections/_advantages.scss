@@ -1,0 +1,67 @@
+.advantages {
+  padding: var(--mg-between-sections) 13px;
+
+  background-color: var(--background-color-scn);
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: var(--max-width);
+  }
+
+  &__elements-group {
+    padding-top: 30px;
+  }
+
+  &__element {
+    padding: 30px; 
+    margin-bottom: 30px;
+
+    border: 2px solid #000;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--bg-box-color);
+
+      .advantages__definition {
+        color: var(--primary-color);
+      }
+
+      .advantages__arrow {
+        stroke: var(--primary-color);
+        fill: var(--primary-color);
+      }
+    }
+  }
+
+  &__title-group {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 16px;
+
+  }
+
+  &__title {
+    font-family: var(--medium-font);
+
+    color: var(--description-color);
+  }
+
+  &__arrow {
+    fill: var(--bg-box-color);
+    stroke: var(--bg-box-color);
+  }
+
+  &__definition {
+    font-family: var(--regular-font);
+  }
+}
+
+@media screen and (min-width: 834px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+}
