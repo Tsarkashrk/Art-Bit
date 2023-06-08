@@ -1,22 +1,20 @@
-:root {
-  --mobile-margin-around: 0 13px;
-  --mg-between-sections: 85px;
-  --mg-work-section: 33px;
-  --space-bw-box: 20px;
+$mg-mob-around: 0 1.3rem;
+$mg-bw-sections: 8.5rem;
+$mg-work-section: 3.3rem;
+$space-bw-box: 2rem;
 
-  --max-width: 1226px;
+$max-width: 1226px;
 
-  --background-color-prm: #101014;
-  --background-color-scn: #ffffff;
-  --bg-box-color: #000;
+$bg-cl-prm: #101014;
+$bg-cl-scn: #fff;
+$bg-box-cl: #000;
 
-  --regular-font: "MontserratRegular";
-  --medium-font: "MontserratMedium";
-  --semibold-font: "MontserratSemiBold";
-  --bold-font: "MontserratBold";
+$regular-font: "MontserratRegular", sans-serif;
+$medium-font: "MontserratMedium", sans-serif;
+$semibold-font: "MontserratSemiBold", sans-serif;
+$bold-font: "MontserratBold", sans-serif;
 
-  --primary-color: #fff;
-  --secondary-color: #63E2B7;
-  --page-color: #484848;
-  --description-color: #989898;
-}
+$prm-cl: #fff;
+$scn-cl: #63E2B7;
+$page-cl: #484848;
+$desc-cl: #989898;

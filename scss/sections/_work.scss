@@ -1,21 +1,18 @@
 .work {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: var(--mg-between-sections) 13px 20px;
+  @include block-settings;
+  padding: $mg-bw-sections 13px 20px;
 
   &__info {
-    display: flex;
+    @include d-flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    padding: var(--mg-work-section) 0;
+    padding: $mg-work-section 0;
   }
 
   &__preview {
     display: flex;
     justify-content: center;
-    padding-bottom: var(--mg-work-section);
+    padding-bottom: $mg-work-section;
   }
 
   &__image {
@@ -24,36 +21,36 @@
   }
 
   &__description {
-    font-family: var(--regular-font);
+    font-family: $regular-font;
     font-size: 20px;
 
-    color: var(--primary-color);
+    color: $prm-cl;
 
-    &--gray {
-      display: block;
-
-      color: var(--page-color);
+    &--primary {
+      margin-bottom: 15px;
     }
 
-    &--white {
+    &--dark {
+      display: block;
+
+      color: $page-cl;
+    }
+
+    &--secondary {
+      margin-bottom: 50px;
+    }
+
+    &--light {
       display: block;
     }
-  }
-
-  &__first-paragraph {
-    margin-bottom: 15px;
-  }
-  &__second-paragraph {
-    margin-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 834px) {
   .work {
     &__info {
+      @include d-flex;
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
     }
 
     &__preview {

@@ -1,6 +1,7 @@
 // Abstracts 
 
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 // Base
 
@@ -10,7 +11,7 @@
 
 // Components
 
-@import "./components/try-btn";
+@import "./components/button";
 @import "./components/slider-platforms";
 @import "./components/page-title";
 

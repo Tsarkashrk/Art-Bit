@@ -1,13 +1,10 @@
-.banks {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: var(--mobile-margin-around);
+.banks {  
+  @include block-settings;
+  padding: $mg-mob-around;
 
   &__elements-group {
-    display: grid;
+    @include d-grid;
     grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
-    justify-content: center;
-    align-items: center;
     grid-row-gap: 31px;
     grid-column-gap: 16px;
 
@@ -29,26 +26,25 @@
     text-align: center;
     width: 100%;
 
-    font-family: var(--regular-font);
+    font-family: $regular-font;
     font-size: 14px;
 
-    color: var(--description-color);
+    color: $desc-cl;
   }
 
   &__description {
     text-align: center;
 
-    font-family: var(--regular-font);
+    font-family: $regular-font;
 
-    color: var(--primary-color);
+    color: $prm-cl;
+
+    cursor: pointer;
   }
 
-  &__arrow-left {
+  &__arrow-left, &__arrow-right {
     display: none;
-  }
-
-  &__arrow-right {
-    display: none;
+    cursor: pointer;
   }
 
   &__description-group {

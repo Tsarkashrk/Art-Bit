@@ -1,14 +1,9 @@
 .header {
-  max-width: var(--max-width);
+  @include block-settings;
 
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding-top: 30px;
-  margin: var(--mobile-margin-around);
+  @include d-flex;
 
   &__img { 
     padding-top: 5px;
@@ -28,9 +23,9 @@
   &__nav {
     display: none;
 
-    font-family: var(--medium-font);
+    font-family: $medium-font;
 
-    color: var(--primary-color);
+    color: $prm-cl;
   }
 
   &__btn {
@@ -89,7 +84,7 @@
       transition: all 0.2s ease;
 
       &:hover {
-        color: var(--description-color);
+        color: $desc-cl;
   
         &::after {
           content: '';
@@ -101,14 +96,14 @@
           width: 34px;
           height: 2px;
 
-          background: var(--secondary-color);
+          background: $scn-cl;
     
-          color: var(--description-color);
+          color: $prm-cl;
         }
       }
 
       &:active {
-        color: var(--primary-color);
+        color: $prm-cl;
       }
     }
 
@@ -119,12 +114,12 @@
 
       padding: 8px 10px;
 
-      font-family: var(--semibold-font);
+      font-family: $semibold-font;
       font-size: 18px;
 
-      background-color: var(--secondary-color);
+      background-color: $scn-cl;
 
-      border: 2px solid var(--secondary-color);
+      border: 2px solid $scn-cl;
 
       cursor: pointer;
 
@@ -133,20 +128,20 @@
       &:hover {
         background-color: transparent;
 
-        border-color: var(--description-color);
+        border-color: $desc-cl;
   
-        color: var(--secondary-color);
+        color: $scn-cl;
 
         & .header__user-icon {
-          stroke: var(--secondary-color);
+          stroke: $scn-cl;
         }
       }
 
       &:active {
-        color: var(--description-color);
+        color: $desc-cl;
 
         & .header__user-icon {
-          stroke: var(--description-color);
+          stroke: $desc-cl;
         }
       }
     }

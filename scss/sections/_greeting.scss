@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  max-width: var(--max-width);
-  margin: 0 auto;
+  @include block-settings;
 
-  padding: var(--mobile-margin-around);
+  padding: $mg-mob-around;
 
   &__companies {
     margin: 0 auto;
@@ -17,15 +16,15 @@
   }
 
   &__title {
-    font-family: "MontserratBold";
+    font-family: $bold-font;
     font-size: 28px;
 
     &--white {
-      color: var(--primary-color);
+      color: $prm-cl;
     }
 
     &--green {
-      color: var(--secondary-color);
+      color: $csn-cl;
     }
   }
 
@@ -33,9 +32,9 @@
     margin: 16px 0 20px 0;
     padding-bottom: 35px;
 
-    font-family: "MontserratRegular";
+    font-family: $regular-font;
 
-    color: var(--description-color);
+    color: $desc-cl;
   }
 }
 

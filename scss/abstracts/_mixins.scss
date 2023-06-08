@@ -1,0 +1,16 @@
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin d-grid {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin block-settings {
+  margin: 0 auto;
+  max-width: $max-width;
+}

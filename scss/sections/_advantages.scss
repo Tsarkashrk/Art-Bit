@@ -1,11 +1,12 @@
 .advantages {
-  padding: var(--mg-between-sections) 13px;
+  @include max-width;
 
-  background-color: var(--background-color-scn);
+  padding: 0 13px;
+
+  background-color: $bg-cl-scn;
 
   &__wrapper {
-    margin: 0 auto;
-    max-width: var(--max-width);
+    @include block-settings;
   }
 
   &__elements-group {
@@ -21,40 +22,108 @@
     cursor: pointer;
 
     &:hover {
-      background-color: var(--bg-box-color);
+      background-color: $bg-box-cl;
 
-      .advantages__definition {
-        color: var(--primary-color);
+      .advantages__description {
+        color: $prm-cl;
       }
 
       .advantages__arrow {
-        stroke: var(--primary-color);
-        fill: var(--primary-color);
+        stroke: $prm-cl;
+        fill: $prm-cl;
       }
     }
   }
 
   &__title-group {
-    display: flex;
-    justify-content: space-between;
+    @include d-flex;
 
     padding-bottom: 16px;
 
   }
 
   &__title {
-    font-family: var(--medium-font);
+    font-family: $medium-font;
 
-    color: var(--description-color);
+    color: $desc-cl;
   }
 
   &__arrow {
-    fill: var(--bg-box-color);
-    stroke: var(--bg-box-color);
+    fill: $bg-box-cl;
+    stroke: $bg-box-cl;
   }
 
-  &__definition {
-    font-family: var(--regular-font);
+  &__description {
+    font-family: $regular-font;
+  }
+
+  &--black {  
+    @include block-settings;
+    padding: $mg-bw-sections 13px;
+
+    &__video {
+      position: relative;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__play-icon {
+      position: relative;
+
+      padding: 17px 27px;
+
+      border: 3px solid $prm-cl;
+
+      &::before {
+        content: '';
+    
+        position: absolute;
+        top: -2px;
+        left: 40px;
+    
+        width: calc(100% - 80px);
+        height: calc(100% + 4px);
+    
+        background-color: black;
+    
+        transition: all 1s ease-in-out;
+    
+        transform: scaleY(1);
+      }
+    
+      &:hover::before {
+        transform: scaleY(0);
+      }
+    
+      &:active {
+        border-color: $desc-cl;
+        color: $desc-cl;
+        fill: $desc-cl;
+      }
+    }
+
+    &__title {
+      padding-top: 15px;
+
+      font-family: $regular-font;
+      font-size: 18px;
+      
+      color: $prm-cl;
+    }
   }
 }
 

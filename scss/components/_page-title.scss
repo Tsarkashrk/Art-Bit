@@ -1,17 +1,17 @@
 .text-group {
 
   &__page {
-    font-family: var(--regular-font);
+    font-family: $regular-font;
     font-size: 15px;
 
-    color: var(--page-color);
+    color: $page-cl;
   }
 
   &__title {
-    font-family: var(--regular-font);
+    font-family: $regular-font;
     font-size: 19px;
 
-    color: var(--description-color);
+    color: $desc-cl;
   }
 }
 
@@ -26,7 +26,4 @@
       font-size: 32px;
     }
   }
-}
-
-@media screen and (min-width: 1200px) {
 }

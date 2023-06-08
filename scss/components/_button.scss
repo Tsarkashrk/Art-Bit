@@ -1,0 +1,51 @@
+.button__link {
+  position: relative;
+
+  padding: 1.7rem 2.7rem;
+
+  border: 0.2rem solid $scn-cl;
+
+  font-family: $semibold-font;
+  font-size: 1.8rem;
+
+  color: $scn-cl;
+
+  transition: all 0.2s ease;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -0.2rem;
+    left: 4rem;
+
+    width: calc(100% - 8rem);
+    height: calc(100% + 4rem);
+
+    background-color: $bg-cl-prm;
+
+    transition: all 1s ease-in-out;
+
+    transform: scaleY(1);
+  }
+
+  &:hover::before {
+    transform: scaleY(0);
+  }
+
+  &:active {
+    border-color: $desc-cl;
+    color: $desc-cl;
+  }
+}
+
+.button__title {
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (min-width: 834px) {
+  .button__link {
+    font-size: 2rem;
+  }
+}

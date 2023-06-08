@@ -1,6 +1,6 @@
 .suitable {
-  max-width: var(--max-width);
-  margin: 0 auto var(--mg-between-sections) auto;
+  max-width: $max-width;
+  margin: 0 auto $mg-bw-sections auto;
   padding: 0 13px;
 
   &__elements-group {
@@ -8,7 +8,7 @@
   }
 
   &__element {
-    padding: var(--space-bw-box);
+    padding: $space-bw-box;
     margin-bottom: 30px;
 
     background: url(/Art-Bit/media/wrapper.svg) no-repeat center;
@@ -18,9 +18,9 @@
   &__text-group {
     top: 0;
 
-    font-family: var(--regular-font);
+    font-family: $regular-font;
 
-    color: var(--primary-color);
+    color: $prm-cl;
   }
 
   &__title-group {
@@ -35,8 +35,8 @@
     font-size: 22px;
   }
 
-  &__definition {
-    padding-bottom: var(--space-bw-box);
+  &__description {
+    padding-bottom: $space-bw-box;
 
     font-size: 18px;
   }
@@ -46,7 +46,7 @@
 
     font-size: 14px;
 
-    color: var(--description-color);
+    color: $desc-cl;
   }
 }
 
@@ -61,7 +61,7 @@
       font-size: 36px;
     }
 
-    &__definition {
+    &__description {
       font-size: 20px;
     }
 
@@ -84,7 +84,7 @@
       font-size: 36px;
     }
 
-    &__definition {
+    &__description {
       font-size: 20px;
     }
 
