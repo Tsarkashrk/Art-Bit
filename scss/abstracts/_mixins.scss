@@ -1,6 +1,34 @@
-@mixin d-flex {
+// Breakpoints
+
+@mixin for-phone {
+  @media screen and (min-width: $s-res) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media screen and (min-width: $m-res) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media screen and (min-width: $l-res) {
+    @content;
+  }
+}
+
+// Display
+
+@mixin d-flex-prm {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+@mixin d-flex-scn {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -10,7 +38,9 @@
   align-items: center;
 }
 
+// Default settings
+
 @mixin block-settings {
   margin: 0 auto;
-  max-width: $max-width;
+  max-width: $max-wd;
 }

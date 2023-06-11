@@ -1,41 +1,39 @@
 .image-slider {
-  margin-top: 40px;
+  margin-top: 4rem;
 
   .image-slider__slide {
-    width: 90px !important;
+    width: $slider-wd;
   }
 
   .image-slider__image {
-    width: 90px !important;
+    width: $slider-wd;
   }
 
   &__image {
-    display: flex;
+    @include d-flex-scn;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    width: 90px !important;
+    width: $slider-wd;
   }
 
   &__name {
-    margin: 0 auto;
-    padding-top: 15px;
+    margin: $mg-center;
+    padding-top: 1.5rem;
 
     font-family: $semibold-font;
-    font-size: 14px;
+    font-size: $fs-xxs;
     
     color: $prm-cl;
   }
 }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 834px) {
   .image-slider {
     display: none;
   }
 }
 
 .slider .swiper-container {
-  width: 100%;
-  height: 100%;
+  width: $full-wd;
+  height: $full-wd;
 }

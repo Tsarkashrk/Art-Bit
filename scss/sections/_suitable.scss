@@ -1,22 +1,34 @@
 .suitable {
-  max-width: $max-width;
-  margin: 0 auto $mg-bw-sections auto;
-  padding: 0 13px;
+  max-width: $max-wd;
+  margin: $mg-center $mg-bw-sections;
+  padding: $pd-around-mob;
 
   &__elements-group {
-    margin: 30px 0;
+    margin: $pd-hdr-top-mob $reset-space;
   }
 
   &__element {
     padding: $space-bw-box;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 
     background: url(/Art-Bit/media/wrapper.svg) no-repeat center;
-    background-size: 100% 100%;
+    background-size: $full-wd $full-wd;
+
+    @include for-tablet {
+      background: url(/Art-Bit/media/wrapper2.svg) no-repeat center;
+      background-size: $full-wd $full-wd;
+    }
+    
+    @include for-desktop {
+      margin-bottom: 6rem;
+
+      background: url(/Art-Bit/media/wrapper3.svg) no-repeat center;
+      background-size: $full-wd $full-wd;
+    }
   }
 
   &__text-group {
-    top: 0;
+    top: $reset-space;
 
     font-family: $regular-font;
 
@@ -28,68 +40,36 @@
     align-items: center;
     gap: 2%;
 
-    padding-bottom: 30px;
+    padding-bottom: $pd-hdr-top-mob;
   }
 
   &__title {
-    font-size: 22px;
+    font-size: $fs-xm;
+
+    @include for-tablet {
+      font-size: $fs-xl;
+    }
   }
 
   &__description {
     padding-bottom: $space-bw-box;
 
-    font-size: 18px;
+    font-size: $fs-s;
+
+    @include for-tablet {
+      font-size: $fs-m;
+    }
   }
 
   &__options {
-    padding-bottom: 6px;
+    padding-bottom: 0.6rem;
 
-    font-size: 14px;
+    font-size: $fs-xxs;
 
     color: $desc-cl;
-  }
-}
 
-@media screen and (min-width: 834px) {
-  .suitable {
-    &__element {
-      background: url(/Art-Bit/media/wrapper2.svg) no-repeat center;
-      background-size: 100% 100%;
-    }
-
-    &__title {
-      font-size: 36px;
-    }
-
-    &__description {
-      font-size: 20px;
-    }
-
-    &__options {
-      font-size: 16px;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .suitable {
-    &__element {
-      margin-bottom: 60px;
-
-      background: url(/Art-Bit/media/wrapper3.svg) no-repeat center;
-      background-size: 100% 100%;
-    }
-
-    &__title {
-      font-size: 36px;
-    }
-
-    &__description {
-      font-size: 20px;
-    }
-
-    &__options {
-      font-size: 16px;
+    @include for-tablet {
+      font-size: $fs-xs;
     }
   }
 }

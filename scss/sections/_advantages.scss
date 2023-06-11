@@ -1,23 +1,21 @@
 .advantages {
-  @include max-width;
-
-  padding: 0 13px;
-
+  padding: $mg-bw-sections $reset-space;
   background-color: $bg-cl-scn;
 
   &__wrapper {
     @include block-settings;
+    padding: $reset-space $pd-hdr-around-mob
   }
 
   &__elements-group {
-    padding-top: 30px;
+    padding-top: $pd-hdr-top-mob;
   }
 
   &__element {
-    padding: 30px; 
-    margin-bottom: 30px;
+    padding: $pd-hdr-top-mob; 
+    margin-bottom: $pd-hdr-top-mob;
 
-    border: 2px solid #000;
+    border: $border #000;
 
     cursor: pointer;
 
@@ -36,16 +34,21 @@
   }
 
   &__title-group {
-    @include d-flex;
+    @include d-flex-prm;
 
-    padding-bottom: 16px;
+    padding-bottom: 1.6rem;
 
   }
 
   &__title {
     font-family: $medium-font;
+    font-size: $fs-xs;
 
     color: $desc-cl;
+
+    @include for-tablet {
+      font-size: $fs-s;
+    }
   }
 
   &__arrow {
@@ -55,48 +58,51 @@
 
   &__description {
     font-family: $regular-font;
+    font-size: $fs-xxs;
+
+    @include for-tablet {
+      font-size: $fs-xs;
+    }
   }
 
   &--black {  
     @include block-settings;
-    padding: $mg-bw-sections 13px;
+    padding: $mg-bw-sections $pd-hdr-around-mob;
 
     &__video {
       position: relative;
     }
 
     &__img {
-      width: 100%;
+      width: $full-wd;
     }
 
     &__wrapper {
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      top: $reset-space;
+      bottom: $reset-space;
+      left: $reset-space;
+      right: $reset-space;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include d-flex-scn;
     }
 
     &__play-icon {
       position: relative;
 
-      padding: 17px 27px;
+      padding: 1.7rem 2.7rem;
 
-      border: 3px solid $prm-cl;
+      border: $border $prm-cl;
 
       &::before {
         content: '';
     
         position: absolute;
-        top: -2px;
-        left: 40px;
+        top: -0.2rem;
+        left: 4rem;
     
-        width: calc(100% - 80px);
-        height: calc(100% + 4px);
+        width: calc(100% - 8rem);
+        height: calc(100% + 0.4rem);
     
         background-color: black;
     
@@ -117,20 +123,12 @@
     }
 
     &__title {
-      padding-top: 15px;
+      padding-top: 1.5rem;
 
       font-family: $regular-font;
-      font-size: 18px;
+      font-size: $fs-s;
       
       color: $prm-cl;
     }
   }
-}
-
-@media screen and (min-width: 834px) {
-  
-}
-
-@media screen and (min-width: 1200px) {
-
 }

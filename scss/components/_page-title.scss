@@ -2,28 +2,23 @@
 
   &__page {
     font-family: $regular-font;
-    font-size: 15px;
+    font-size: $fs-xxs;
 
     color: $page-cl;
+
+    @include for-tablet {
+      font-size: $fs-xm;
+    }
   }
 
   &__title {
     font-family: $regular-font;
-    font-size: 19px;
+    font-size: $fs-m;
 
     color: $desc-cl;
-  }
-}
 
-@media screen and (min-width: 834px) {
-  .text-group {
-
-    &__page {
-      font-size: 22px;
-    }
-
-    &__title {
-      font-size: 32px;
+    @include for-tablet {
+      font-size: $fs-xl;
     }
   }
 }

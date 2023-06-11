@@ -1,33 +1,54 @@
 .work {
   @include block-settings;
-  padding: $mg-bw-sections 13px 20px;
+  padding: $mg-bw-sections $pd-hdr-around-mob 2rem;
 
   &__info {
-    @include d-flex;
+    @include d-flex-prm;
     flex-direction: column;
 
-    padding: $mg-work-section 0;
+    padding: $mg-work-section $reset-space;
+
+    @include for-tablet {
+      flex-direction: row;
+    }
   }
 
   &__preview {
     display: flex;
     justify-content: center;
     padding-bottom: $mg-work-section;
+
+    @include for-tablet {
+      order: 2;
+    }
   }
 
   &__image {
-    width: 100%;
-    max-width: 497px;
+    width: $full-wd;
+    max-width: 49.7rem;
+
+    @include for-tablet {
+      min-width: 49.7rem;
+      max-width: $full-wd;
+    }
+
+    @include for-desktop {
+      min-width: 69rem;
+    }
   }
 
   &__description {
     font-family: $regular-font;
-    font-size: 20px;
+    font-size: $fs-m;
 
     color: $prm-cl;
 
+    @include for-desktop {
+      font-size: $fs-xm;
+    }
+
     &--primary {
-      margin-bottom: 15px;
+      margin-bottom: 1.5rem;
     }
 
     &--dark {
@@ -37,45 +58,11 @@
     }
 
     &--secondary {
-      margin-bottom: 50px;
+      margin-bottom: 5rem;
     }
 
     &--light {
       display: block;
-    }
-  }
-}
-
-@media screen and (min-width: 834px) {
-  .work {
-    &__info {
-      @include d-flex;
-      flex-direction: row;
-    }
-
-    &__preview {
-      order: 2;
-    }
-
-    &__image {
-      min-width: 497px;
-      max-width: 100%;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .work {
-    &__description {
-      font-size: 24px;
-    }
-
-    &__try-btn {
-      margin-top: 150px;
-    }
-
-    &__image {
-      min-width: 690px;
     }
   }
 }

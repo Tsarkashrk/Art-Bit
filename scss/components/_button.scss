@@ -3,28 +3,32 @@
 
   padding: 1.7rem 2.7rem;
 
-  border: 0.2rem solid $scn-cl;
+  border: 2px solid $scn-cl;
 
   font-family: $semibold-font;
-  font-size: 1.8rem;
+  font-size: $fs-s;
 
   color: $scn-cl;
 
   transition: all 0.2s ease;
 
+  @include for-tablet {
+    font-size: $fs-m;
+  }
+
   &::before {
     content: '';
 
     position: absolute;
-    top: -0.2rem;
-    left: 4rem;
+    top: -2px;
+    left: 40px;
 
-    width: calc(100% - 8rem);
-    height: calc(100% + 4rem);
+    width: calc(100% - 80px);
+    height: calc(100% + 40px);
 
     background-color: $bg-cl-prm;
 
-    transition: all 1s ease-in-out;
+    transition: all 1s ease;
 
     transform: scaleY(1);
   }
@@ -42,10 +46,4 @@
 .button__title {
   position: relative;
   z-index: 3;
-}
-
-@media screen and (min-width: 834px) {
-  .button__link {
-    font-size: 2rem;
-  }
 }

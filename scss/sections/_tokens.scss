@@ -1,24 +1,28 @@
 .tokens {
   @include block-settings;
-  padding: $mg-bw-sections 13px 100px 13px;
+  padding: $mg-bw-sections $pd-hdr-around-mob $pltfrms-pd-top;
+
+  @include for-desktop {
+    padding: $mg-bw-sections $pd-hdr-around-mob;
+  }
 
   &__elements-group {
     @include d-grid;
-    grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-    row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+    row-gap: $tokens-gap;
     column-gap: 5%;  
 
-    padding: 43px 0 60px 0;
+    padding: 4.3rem $reset-space 6rem;
   }
 
   &__element {
     position: relative;
 
+    padding: 2.1rem $reset-space;
+
     text-align: center;
 
-    padding: 21px 0;
-
-    border: 2px solid $page-cl;
+    border: $border $page-cl;
     
     color: $prm-cl;
 
@@ -27,11 +31,11 @@
 
       position: absolute;
 
-      top: -2px;
-      left: 40px;
+      top: -0.2rem;
+      left: $tokens-gap;
 
-      width: calc(100% - 80px);
-      height: calc(100% + 4px);
+      width: calc(100% - 8rem);
+      height: calc(100% + 0.4rem);
 
       background-color: $bg-cl-prm;
     }
@@ -40,16 +44,16 @@
   &__image {
     position: relative;
 
-    width: 60px;
+    width: 6rem;
   }
 
   &__name {
     position: relative;
 
-    margin: 17px auto 2px;
+    margin: 1.7rem auto 0.2rem;
 
     font-family: $semibold-font;
-    font-size: 26px;
+    font-size: 2.6rem;
   }
 
   &__description {
@@ -62,14 +66,5 @@
 
   &__button {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 834px) {
-}
-
-@media screen and (min-width: 1200px) {
-  .tokens {
-    padding: $mg-bw-sections 13px;
   }
 }

@@ -1,22 +1,42 @@
 .platforms {
-  margin: $mg-mob-around;
-  padding-top: 100px;
+  margin: $pd-around-mob;
+  padding-top: $pltfrms-pd-top;
 
-  max-width: $max-width;
+  max-width: $max-wd;
+
+  @include for-desktop {
+    margin: 14.5rem auto $mg-center;
+    padding: $pltfrms-pd-top $pd-hdr-around-mob $reset-space;
+  }
 
   &__list {
     display: none;
   }
+
+  &__image {
+    @include for-tablet {
+      width: $banks-wd;
+    }
+
+    @include for-desktop {
+      width: 21rem;
+      margin-top: 5rem;
+    }
+  }
+
+  &__title {
+    @include for-desktop {
+      font-size: $fs-m;
+    }
+  }
 }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 834px) {
   .platforms {
     &__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include d-flex-prm;
 
-      margin-top: 40px;
+      margin-top: 4rem;
     }
 
     &__element {
@@ -26,49 +46,12 @@
     }
 
     &__title {
-      padding-top: 15px;
+      padding-top: 1.5rem;
 
       font-family: $semibold-font;
-      font-size: 14px;
+      font-size: $fs-xxs;
 
       color: $prm-cl;
-    }
-  }
-}
-
-@media screen and (min-width: 834px) {
-  .platforms {
-
-    &__image {
-      width: 140px;
-    }
-
-    &__title {
-      font-size: 20px;
-    }
-
-  }
-
-  .text-group {
-
-    &__page {
-      font-size: 22px;
-    }
-
-    &__title {
-      font-size: 32px;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .platforms {
-    margin: 145px auto 0 auto;
-    padding: 100px 13px 0 13px;
-
-    &__image {
-      width: 210px;
-      margin-top: 50px;
     }
   }
 }

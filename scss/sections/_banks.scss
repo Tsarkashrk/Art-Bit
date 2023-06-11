@@ -1,35 +1,59 @@
 .banks {  
   @include block-settings;
-  padding: $mg-mob-around;
+  padding: $pd-around-mob;
 
   &__elements-group {
     @include d-grid;
-    grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
-    grid-row-gap: 31px;
-    grid-column-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(9.2rem, 1fr));
+    grid-row-gap: $pd-hdr-top-mob;
+    grid-column-gap: 1.6rem;
 
-    margin: 0 auto;
-    padding: 43px 0 30px 0;
+    margin: $mg-center;
+    padding: 4.3rem $reset-space $pd-hdr-top-mob;
   }
 
   &__element {
     position: relative;
 
+    @include d-flex-scn;
+
     margin: 0 auto;
-    width: 92px;
+    width: 9.2rem;
+
+    @include for-tablet {
+      width: $banks-wd;
+    }
+
+    @include for-desktop {
+      width: 21rem;
+    }
+  }
+
+  &__image {
+    @include for-tablet {
+      width: $banks-wd;
+    }
+
+    @include for-desktop {
+      width: $banks-wd;
+    }
   }
 
   &__name {
     position: absolute;
-    bottom: 15px;
+    bottom: 1.5rem;
 
+    width: $full-wd;
     text-align: center;
-    width: 100%;
 
     font-family: $regular-font;
-    font-size: 14px;
+    font-size: $fs-xxs;
 
     color: $desc-cl;
+
+    @include for-tablet {
+      font-size: $fs-m;
+    }
   }
 
   &__description {
@@ -40,66 +64,27 @@
     color: $prm-cl;
 
     cursor: pointer;
+
+    @include for-tablet {
+      font-size: 2rem;
+    }
   }
 
   &__arrow-left, &__arrow-right {
     display: none;
     cursor: pointer;
+
+    @include for-tablet {
+      display: flex;
+    }
   }
 
   &__description-group {
-    display: flex;
-    justify-content: center;
-    gap: 75px;
-  }
-}
+    @include d-flex-scn;
+    gap: 7.5rem;
 
-@media screen and (min-width: 834px) {
-  .banks {
-
-    &__element {
-      width: 140px;
-    }
-
-    &__image {
-      width: 140px;
-    }
-
-    &__name {
-      font-size: 20px;
-    }
-
-    &__arrow-left {
-      display: flex;
-    }
-
-    &__description {
-      font-size: 20px;
-    }
-  
-    &__arrow-right {
-      display: flex;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .banks {
-
-    &__element {
-      width: 210px;
-    }
-
-    &__image {
-      width: 210px;
-    }
-
-    &__name {
-      font-size: 27px;
-    }
-
-    &__description-group {
-      padding-top: 30px;
+    @include for-desktop {
+      padding-top: $pd-hdr-top-mob;
     }
   }
 }
