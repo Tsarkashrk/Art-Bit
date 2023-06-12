@@ -62,9 +62,9 @@ body {
   top: -2px;
   left: 40px;
   width: calc(100% - 80px);
-  height: calc(100% + 40px);
+  height: 6.2rem;
   background-color: #101014;
-  transition: all 1s ease;
+  transition: all 0.5s ease-in-out;
   transform: scaleY(1);
 }
 .button__link:hover::before {
@@ -83,10 +83,12 @@ body {
 .image-slider {
   margin-top: 4rem;
 }
-.image-slider .image-slider__slide {
-  width: 9rem !important;
+@media screen and (min-width: 834px) {
+  .image-slider {
+    display: none;
+  }
 }
-.image-slider .image-slider__image {
+.image-slider__slide {
   width: 9rem !important;
 }
 .image-slider__image {
@@ -104,11 +106,6 @@ body {
   color: #fff;
 }
 
-@media screen and (min-width: 834px) {
-  .image-slider {
-    display: none;
-  }
-}
 .slider .swiper-container {
   width: 100%;
   height: 100%;
@@ -117,7 +114,7 @@ body {
 .text-group__page {
   font-family: "MontserratRegular", sans-serif;
   font-size: 1.4rem;
-  color: #484848;
+  color: #989898;
 }
 @media screen and (min-width: 834px) {
   .text-group__page {
@@ -127,7 +124,7 @@ body {
 .text-group__title {
   font-family: "MontserratRegular", sans-serif;
   font-size: 2rem;
-  color: #989898;
+  color: #c6c6c6;
 }
 @media screen and (min-width: 834px) {
   .text-group__title {
@@ -139,20 +136,10 @@ body {
   margin: 0 auto;
   max-width: 1226px;
   position: relative;
+  padding: 3rem 1.3rem 9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (min-width: 834px) {
-  .header {
-    margin: 0 auto;
-    padding: 3rem 1.3rem 9rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    padding: 3rem 1.3rem 9rem;
-  }
 }
 .header__img {
   padding-top: 0.5rem;
@@ -260,7 +247,7 @@ body {
 }
 @media screen and (min-width: 834px) {
   .header__icon {
-    width: 25px;
+    width: 2.5rem;
   }
 }
 .header__menu {
@@ -784,4 +771,111 @@ body {
   font-family: "MontserratRegular", sans-serif;
   font-size: 1.8rem;
   color: #fff;
+}
+
+.subscription {
+  margin: 0 auto;
+  max-width: 1226px;
+  padding: 8.5rem 1.3rem;
+}
+.subscription__wrapper {
+  display: none;
+}
+@media screen and (min-width: 834px) {
+  .subscription__wrapper {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .element-slider {
+    display: none;
+  }
+}
+.element-slider__main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.3rem;
+}
+.element-slider__block {
+  position: absolute;
+  top: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.element-slider__title {
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 2.6rem;
+  color: #fff;
+}
+.element-slider__price {
+  padding-top: 5rem;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 2.6rem;
+  color: #63E2B7;
+}
+.element-slider__term {
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 1.6rem;
+  color: #484848;
+}
+.element-slider__line {
+  width: 12rem;
+  padding-top: 2.5rem;
+  border-bottom: 2px solid #484848;
+}
+.element-slider__description {
+  width: 23rem;
+  padding: 2.5rem 0 5rem;
+  font-family: "MontserratMedium", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #989898;
+}
+.element-slider__button {
+  position: absolute;
+  bottom: 5rem;
+}
+.element-slider__suitable {
+  position: relative;
+  width: 27.7rem;
+  margin: 3.3rem auto;
+  padding: 2.1rem 0;
+  border: 2px solid #63E2B7;
+  color: #fff;
+}
+.element-slider__suitable::before {
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: 4rem;
+  width: calc(100% - 8rem);
+  height: calc(100% + 0.4rem);
+  background-color: #101014;
+}
+.element-slider__text {
+  position: relative;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #c6c6c6;
+}
+
+.swiper-pagination-bullet {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: transparent;
+  border: 2px solid #63E2B7;
 }
