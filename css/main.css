@@ -259,6 +259,69 @@ body {
   }
 }
 
+.footer {
+  margin: 0 auto;
+  max-width: 1226px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8.5rem 1.3rem 2rem;
+}
+.footer__logo-group {
+  position: relative;
+  margin-bottom: 8.5rem;
+  cursor: pointer;
+}
+.footer__blur {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 9rem !important;
+  background: rgba(99, 226, 183, 0.34);
+  filter: blur(4.2rem);
+  border-radius: 1.2rem;
+}
+.footer__text-group {
+  padding-bottom: 5rem;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 1.6rem;
+  color: #989898;
+}
+@media screen and (min-width: 834px) {
+  .footer__text-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+.footer__text {
+  padding-bottom: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+}
+.footer__flags-group {
+  display: flex;
+  gap: 1.3rem;
+  padding-bottom: 5rem;
+}
+.footer__flag {
+  cursor: pointer;
+}
+.footer__icons-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: #989898;
+  border: 2px solid #989898;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
 .greeting {
   display: flex;
   flex-direction: column;
