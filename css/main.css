@@ -59,9 +59,9 @@ body {
 .button__link::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: 40px;
-  width: calc(100% - 80px);
+  top: -0.2rem;
+  left: 4rem;
+  width: calc(100% - 8rem);
   height: 6.2rem;
   background-color: #101014;
   transition: all 1s ease-in-out;
@@ -292,7 +292,7 @@ body {
   .footer__text-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 2rem;
   }
 }
 .footer__text {
@@ -312,6 +312,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .footer__icon {
   width: 5rem;
@@ -811,30 +812,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-.advantages--black__play-icon {
-  position: relative;
-  padding: 1.7rem 2.7rem;
-  border: 2px solid #fff;
-}
-.advantages--black__play-icon::before {
-  content: "";
-  position: absolute;
-  top: -0.2rem;
-  left: 4rem;
-  width: calc(100% - 8rem);
-  height: calc(100% + 0.4rem);
-  background-color: black;
-  transition: all 1s ease-in-out;
-  transform: scaleY(1);
-}
-.advantages--black__play-icon:hover::before {
-  transform: scaleY(0);
-}
-.advantages--black__play-icon:active {
-  border-color: #989898;
-  color: #989898;
-  fill: #989898;
-}
 .advantages--black__title {
   padding-top: 1.5rem;
   font-family: "MontserratRegular", sans-serif;
@@ -1042,4 +1019,5 @@ body {
 .developers__description--secondary {
   text-decoration: underline;
   color: #63E2B7;
+  cursor: pointer;
 }

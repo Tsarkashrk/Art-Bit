@@ -87,41 +87,6 @@
       @include d-flex-scn;
     }
 
-    &__play-icon {
-      position: relative;
-
-      padding: 1.7rem 2.7rem;
-
-      border: $border $prm-cl;
-
-      &::before {
-        content: '';
-    
-        position: absolute;
-        top: -0.2rem;
-        left: 4rem;
-    
-        width: calc(100% - 8rem);
-        height: calc(100% + 0.4rem);
-    
-        background-color: black;
-    
-        transition: all 1s ease-in-out;
-    
-        transform: scaleY(1);
-      }
-    
-      &:hover::before {
-        transform: scaleY(0);
-      }
-    
-      &:active {
-        border-color: $desc-cl;
-        color: $desc-cl;
-        fill: $desc-cl;
-      }
-    }
-
     &__title {
       padding-top: 1.5rem;
 
