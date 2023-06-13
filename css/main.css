@@ -64,7 +64,7 @@ body {
   width: calc(100% - 80px);
   height: 6.2rem;
   background-color: #101014;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   transform: scaleY(1);
 }
 .button__link:hover::before {
@@ -438,6 +438,12 @@ body {
   position: relative;
   font-family: "MontserratRegular", sans-serif;
   color: #484848;
+  cursor: pointer;
+}
+@media screen and (min-width: 834px) {
+  .tokens__description {
+    font-size: 2rem;
+  }
 }
 .tokens__button {
   text-align: center;
@@ -851,8 +857,8 @@ body {
 .element-slider__suitable {
   position: relative;
   width: 27.7rem;
-  margin: 3.3rem auto;
-  padding: 2.1rem 0;
+  margin: 3.3rem auto 0;
+  padding: 2rem 0;
   border: 2px solid #63E2B7;
   color: #fff;
 }
@@ -872,10 +878,105 @@ body {
   text-align: center;
   color: #c6c6c6;
 }
+.element-slider__pagination {
+  position: relative;
+  margin-top: 4rem;
+}
 
 .swiper-pagination-bullet {
   width: 1.4rem;
   height: 1.4rem;
   background-color: transparent;
   border: 2px solid #63E2B7;
+}
+
+.reviews {
+  margin: 0 auto;
+  max-width: 1226px;
+  padding: 0 1.3rem;
+}
+
+.reviews-slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8.5rem;
+}
+.reviews-slider__group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 26rem;
+  height: 13rem;
+  background-color: #17171B;
+}
+@media screen and (min-width: 1200px) {
+  .reviews-slider__group {
+    width: 35rem;
+  }
+}
+.reviews-slider__image {
+  position: absolute;
+  top: -4rem;
+}
+.reviews-slider__name {
+  position: absolute;
+  top: 8.5rem;
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.reviews-slider__rating {
+  margin-top: 2rem;
+}
+.reviews-slider__symbol {
+  margin-top: 2rem;
+  font-family: "MontserratSemiBold", sans-serif;
+  font-size: 4rem;
+  color: #63E2B7;
+}
+.reviews-slider__description {
+  width: 26rem;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 1.6rem;
+  color: #989898;
+}
+.reviews-slider__button {
+  margin-top: 9rem !important;
+  color: white;
+}
+@media screen and (min-width: 1200px) {
+  .reviews-slider__button {
+    display: none;
+  }
+}
+
+.developers {
+  margin: 0 auto;
+  max-width: 1226px;
+  padding: 8.5rem 1.3rem;
+}
+.developers__description {
+  max-width: 85rem;
+  padding-top: 2rem;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 1.6rem;
+  color: #989898;
+}
+@media screen and (min-width: 834px) {
+  .developers__description {
+    padding-top: 3.3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .developers__description {
+    padding-top: 5rem;
+  }
+}
+.developers__description--secondary {
+  text-decoration: underline;
+  color: #63E2B7;
 }

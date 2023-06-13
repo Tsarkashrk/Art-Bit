@@ -89,8 +89,8 @@
     position: relative;
 
     width: 27.7rem;
-    margin: $mg-work-section auto;
-    padding: 2.1rem $reset-space;
+    margin: $mg-work-section auto $reset-space;
+    padding: $space-bw-box $reset-space;
 
     border: $border $scn-cl;
     
@@ -119,6 +119,12 @@
     text-align: center;
 
     color: $title-cl;
+  }
+
+  &__pagination {
+    position: relative;
+
+    margin-top: $tokens-gap;
   }
 }
 
