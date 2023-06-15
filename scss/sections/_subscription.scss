@@ -1,4 +1,7 @@
 .subscription {
+  @include block-settings;
+
+  padding: $mg-bw-sections $pd-hdr-around-mob;
 
   &__wrapper {
     display: none;
@@ -12,9 +15,6 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
-  @include block-settings;
-
-  padding: $mg-bw-sections $pd-hdr-around-mob;
 }
 
 .element-slider {

@@ -7,16 +7,26 @@
   }
 
   &__elements-group {
-    @include d-grid;
-    grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+    @include d-flex-scn;
+    flex-wrap: wrap;
     row-gap: $tokens-gap;
     column-gap: 5%;  
 
     padding: 4.3rem $reset-space 6rem;
+
+    @include for-tablet {
+      column-gap: 10%;
+    }
+
+    @include for-desktop {
+      row-gap: $mg-bw-sections;
+    }
   }
 
   &__element {
     position: relative;
+
+    width: 16.2rem;
 
     padding: 2.1rem $reset-space;
 
@@ -25,6 +35,14 @@
     border: $border $page-cl;
     
     color: $prm-cl;
+
+    @include for-tablet {
+      width: 20rem;
+    }
+
+    @include for-desktop {
+      width: 30rem;
+    }
 
     &::before {
       content: '';
