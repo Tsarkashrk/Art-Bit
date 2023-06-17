@@ -1,9 +1,7 @@
 .tokens {
-  @include block-settings;
-  padding: $mg-bw-sections $pd-hdr-around-mob $pltfrms-pd-top;
 
   @include for-desktop {
-    padding: $mg-bw-sections $pd-hdr-around-mob;
+    
   }
 
   &__elements-group {
@@ -78,6 +76,7 @@
     position: relative;
 
     font-family: $regular-font;
+    font-size: $fs-xs;
 
     color: $page-cl;
 

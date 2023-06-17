@@ -3,21 +3,19 @@
   padding: $pd-around-mob;
 
   &__elements-group {
-    @include d-grid;
-    grid-template-columns: repeat(auto-fit, minmax(9.2rem, 1fr));
-    grid-row-gap: $pd-hdr-top-mob;
-    grid-column-gap: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1.6rem;
+    row-gap: 3rem;
 
-    margin: $mg-center;
-    padding: 4.3rem $reset-space $pd-hdr-top-mob;
+    margin: $pd-hdr-top-mob 0;
   }
 
   &__element {
     position: relative;
 
-    @include d-flex-scn;
-
-    margin: 0 auto;
     width: 9.2rem;
 
     @include for-tablet {
@@ -43,7 +41,7 @@
     position: absolute;
     bottom: 1.5rem;
 
-    width: $full-wd;
+    width: $banks-wd;
     text-align: center;
 
     font-family: $regular-font;
@@ -60,6 +58,7 @@
     text-align: center;
 
     font-family: $regular-font;
+    font-size: $fs-xs;
 
     color: $prm-cl;
 

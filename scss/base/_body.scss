@@ -1,3 +1,14 @@
 body {
+  padding: 2rem 0;
   background-color: $bg-cl-prm;
+}
+
+header, section, footer {
+  max-width: $max-wd;
+  margin: $mg-center;
+  padding: $pd-around-mob;
+}
+
+section {
+  margin: $mg-bw-sections;
 }

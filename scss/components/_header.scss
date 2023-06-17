@@ -1,14 +1,11 @@
 .header {
-  @include block-settings;
-
   position: relative;
 
-  padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
+  max-width: $max-wd;
 
   @include d-flex-prm;
 
   &__img { 
-    padding-top: 0.5rem;
     width: 3.6rem;
     
     @include for-tablet {

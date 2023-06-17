@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  @include block-settings;
-
-  padding: $pd-around-mob;
-
   @include for-tablet {
     position: relative;
 
@@ -16,7 +12,7 @@
   }
 
   @include for-desktop {
-    padding: 11rem $pd-hdr-around-mob $pd-around-mob;
+    padding: 12rem $pd-hdr-around-mob $pd-around-mob;
   }
 
   &__companies {

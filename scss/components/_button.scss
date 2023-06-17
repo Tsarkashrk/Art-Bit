@@ -41,9 +41,14 @@
     border-color: $desc-cl;
     color: $desc-cl;
   }
-}
 
-.button__title {
-  position: relative;
-  z-index: 3;
+  &--secondary {
+    color: $title-cl;
+    border-color: $title-cl;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 3;
+  }
 }

@@ -1,12 +1,7 @@
 .platforms {
-  margin: $pd-around-mob;
-  padding-top: $pltfrms-pd-top;
-
-  max-width: $max-wd;
 
   @include for-desktop {
-    margin: 14.5rem auto $mg-center;
-    padding: $pltfrms-pd-top $pd-hdr-around-mob $reset-space;
+    margin-top: 10rem;
   }
 
   &__list {

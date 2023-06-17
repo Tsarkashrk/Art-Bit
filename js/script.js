@@ -1,5 +1,5 @@
 new Swiper(
-  '.image-slider', 
+  '.platforms__slider', 
   {
     slidesPerView: 3.5,
     spaceBetween: 12,
@@ -8,7 +8,7 @@ new Swiper(
 );
 
 new Swiper(
-  '.element-slider', 
+  '.subscription__slider', 
   {
     slidesPerView: 1,
     pagination: {
@@ -19,7 +19,7 @@ new Swiper(
 );
 
 new Swiper(
-  '.reviews-slider', 
+  '.reviews__slider', 
   {
     slidesPerView: 1,
     spaceBetween: 10,
