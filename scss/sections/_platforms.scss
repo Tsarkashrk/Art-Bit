@@ -1,21 +1,16 @@
 .platforms {
 
-  @include for-desktop {
-    margin-top: 10rem;
-  }
-
   &__list {
     display: none;
   }
 
   &__image {
     @include for-tablet {
-      width: $banks-wd;
+      width: $banks-wd-secondary;
     }
 
     @include for-desktop {
       width: 21rem;
-      margin-top: 5rem;
     }
   }
 
@@ -30,8 +25,6 @@
   .platforms {
     &__list {
       @include d-flex-prm;
-
-      margin-top: 4rem;
     }
 
     &__element {

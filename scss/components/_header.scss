@@ -15,16 +15,20 @@
 
   &__blur {
     position: absolute;
-    top: 1rem;
-    left: -2rem;
+    top: -0.5rem;
+    left: 0.5rem;
+
+    width: 5rem;
 
     background: rgba(16, 41, 33, 0.34);
 
-    filter: blur(4.2rem);
+    filter: blur(2rem);
 
     @include for-tablet {
-      top: 1.5rem;
+      top: -1rem;
       left: $reset-space;
+
+      width: 7rem;
     }
 
     @include for-desktop {

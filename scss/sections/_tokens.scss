@@ -10,8 +10,6 @@
     row-gap: $tokens-gap;
     column-gap: 5%;  
 
-    padding: 4.3rem $reset-space 6rem;
-
     @include for-tablet {
       column-gap: 10%;
     }

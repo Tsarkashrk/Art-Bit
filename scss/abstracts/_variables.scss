@@ -56,6 +56,11 @@
       $l-res: 1200px;
       $s-res: 375px;
 
+      // Gap
+
+      $main-gap-mobile: 8.5rem;
+      $main-gap-tablet: 10rem;
+
       // Margin
 
       $mg-bw-sections: 8.5rem auto;
@@ -65,6 +70,8 @@
       // Padding 
 
       $body-padding: 7rem 1.3rem;
+      $body-main-padding: 2rem 0;
+      $main-pd: 20rem 0;
       $pd-hdr-top-mob: 3rem;
       $pd-hdr-around-mob: 1.3rem;
       $pd-hdr-bottom-mob: 9rem;
@@ -75,5 +82,6 @@
       // Width
 
       $slider-wd: 9rem !important;
-      $banks-wd: 14rem;
+      $banks-ws-primary: 9.2rem;
+      $banks-wd-secondary: 14rem;
       $tokens-gap: 4rem;

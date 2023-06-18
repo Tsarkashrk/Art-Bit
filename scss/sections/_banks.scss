@@ -1,6 +1,4 @@
 .banks {  
-  @include block-settings;
-  padding: $pd-around-mob;
 
   &__elements-group {
     display: flex;
@@ -9,17 +7,20 @@
     flex-wrap: wrap;
     column-gap: 1.6rem;
     row-gap: 3rem;
-
-    margin: $pd-hdr-top-mob 0;
   }
 
   &__element {
     position: relative;
 
-    width: 9.2rem;
+    display: flex;
+    justify-content: center;
+
+    width: $banks-ws-primary;
+
+    text-align: center;
 
     @include for-tablet {
-      width: $banks-wd;
+      width: $banks-wd-secondary;
     }
 
     @include for-desktop {
@@ -28,12 +29,9 @@
   }
 
   &__image {
-    @include for-tablet {
-      width: $banks-wd;
-    }
 
-    @include for-desktop {
-      width: $banks-wd;
+    @include for-tablet {
+      width: $banks-wd-secondary;
     }
   }
 
@@ -41,15 +39,17 @@
     position: absolute;
     bottom: 1.5rem;
 
-    width: $banks-wd;
-    text-align: center;
+    width: $banks-ws-primary;
 
     font-family: $regular-font;
     font-size: $fs-xxs;
+    text-align: center;
 
     color: $desc-cl;
 
     @include for-tablet {
+      width: $banks-wd-secondary;
+
       font-size: $fs-m;
     }
   }

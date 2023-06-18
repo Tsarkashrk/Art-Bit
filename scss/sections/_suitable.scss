@@ -1,15 +1,7 @@
 .suitable {
-  max-width: $max-wd;
-  margin: $mg-center $mg-bw-sections;
-  padding: $pd-around-mob;
-
-  &__elements-group {
-    margin: $pd-hdr-top-mob $reset-space;
-  }
 
   &__element {
     padding: $space-bw-box;
-    margin-bottom: 3rem;
 
     background: url(/Art-Bit/media/wrapper.svg) no-repeat center;
     background-size: $full-wd $full-wd;
@@ -20,7 +12,6 @@
     }
     
     @include for-desktop {
-      margin-bottom: 6rem;
 
       background: url(/Art-Bit/media/wrapper3.svg) no-repeat center;
       background-size: $full-wd $full-wd;
@@ -44,7 +35,7 @@
   }
 
   &__title {
-    font-size: $fs-xm;
+    font-size: $fs-m;
 
     @include for-tablet {
       font-size: $fs-xl;

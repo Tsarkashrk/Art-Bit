@@ -6,8 +6,6 @@
     @include d-flex-prm;
     flex-direction: column;
 
-    padding: $mg-work-section $reset-space;
-
     @include for-tablet {
       flex-direction: row;
     }

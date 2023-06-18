@@ -1,18 +1,20 @@
 .greeting {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
+
+  @include for-tablet {
+    margin-bottom: 11rem;
+  }
 
   @include for-tablet {
     position: relative;
 
     flex-direction: row;
     align-items: center;
-
-    padding-top: 12.5rem;
   }
 
   @include for-desktop {
-    padding: 12rem $pd-hdr-around-mob $pd-around-mob;
   }
 
   &__companies {

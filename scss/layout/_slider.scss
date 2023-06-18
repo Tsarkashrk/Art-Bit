@@ -1,7 +1,5 @@
 .slider {
 
-  margin-top: 4rem;
-
   &--primary {
     @include for-tablet {
       display: none;
