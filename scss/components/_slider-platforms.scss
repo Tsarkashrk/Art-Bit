@@ -1,11 +1,11 @@
 .image-slider {
   margin-top: 4rem;
 
-  .image-slider__slide {
-    width: $slider-wd;
+  @include for-tablet {
+    display: none;
   }
 
-  .image-slider__image {
+  &__slide {
     width: $slider-wd;
   }
 
@@ -24,12 +24,6 @@
     font-size: $fs-xxs;
     
     color: $prm-cl;
-  }
-}
-
-@media screen and (min-width: 834px) {
-  .image-slider {
-    display: none;
   }
 }
 

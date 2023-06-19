@@ -1,0 +1,136 @@
+.subscription {
+
+  &__wrapper {
+    display: none;
+
+    @include for-tablet {
+      @include d-grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include for-desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @include block-settings;
+
+  padding: $mg-bw-sections $pd-hdr-around-mob;
+}
+
+.element-slider {
+  @include for-tablet {
+    display: none;
+  }
+
+  &__main {
+    position: relative;
+
+    @include d-flex-scn;
+
+    padding-top: $mg-work-section;
+  }
+
+  &__block {
+    position: absolute;
+    top: $mg-bw-sections;
+
+    @include d-flex-scn;
+    flex-direction: column;
+
+  }
+
+  &__title {
+    font-family: $regular-font;
+    font-size: $fs-xxm;
+
+    color: $prm-cl;
+  }
+
+  &__price {
+    padding-top: $subs-pd-top;
+
+    font-family: $regular-font;
+    font-size: $fs-xxm;
+
+    color: $scn-cl;
+  }
+
+  &__term {
+    font-family: $regular-font;
+    font-size: $fs-xs;
+
+    color: $page-cl;
+  }
+
+  &__line {
+    width: 12rem;
+    padding-top: 2.5rem;
+
+    border-bottom: 2px solid $page-cl; 
+  }
+
+  &__description {
+    width: 23rem;
+    padding: 2.5rem $reset-space $subs-pd-top;
+
+    font-family: $medium-font;
+    font-size: $fs-xs;
+    text-align: center;
+
+    color: $desc-cl;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: $subs-pd-top;
+  }
+
+  &__suitable {
+    position: relative;
+
+    width: 27.7rem;
+    margin: $mg-work-section auto $reset-space;
+    padding: $space-bw-box $reset-space;
+
+    border: $border $scn-cl;
+    
+    color: $prm-cl;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+
+      top: -0.2rem;
+      left: $tokens-gap;
+
+      width: calc(100% - 8rem);
+      height: calc(100% + 0.4rem);
+
+      background-color: $bg-cl-prm;
+    }
+  }
+
+  &__text {
+    position: relative;
+
+    font-family: $regular-font;
+    font-size: $fs-xs;
+    text-align: center;
+
+    color: $title-cl;
+  }
+
+  &__pagination {
+    position: relative;
+
+    margin-top: $tokens-gap;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: transparent;
+  border: 2px solid $scn-cl
+}

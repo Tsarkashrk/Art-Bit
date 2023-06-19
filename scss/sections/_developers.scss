@@ -1,0 +1,29 @@
+.developers {
+  @include block-settings;
+  padding: $mg-bw-sections $pd-hdr-around-mob;
+
+  &__description {
+    max-width: 85rem;
+
+    padding-top: $space-bw-box;
+
+    font-family: $regular-font;
+    font-size: $fs-xs;
+
+    color: $desc-cl;
+
+    @include for-tablet {
+      padding-top: $mg-work-section;
+    }
+
+    @include for-desktop {
+      padding-top: $subs-pd-top;
+    }
+
+    &--secondary {
+      text-decoration: underline;
+
+      color: $scn-cl;
+    }
+  }
+}

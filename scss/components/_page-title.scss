@@ -4,7 +4,7 @@
     font-family: $regular-font;
     font-size: $fs-xxs;
 
-    color: $page-cl;
+    color: $desc-cl;
 
     @include for-tablet {
       font-size: $fs-xm;
@@ -15,7 +15,7 @@
     font-family: $regular-font;
     font-size: $fs-m;
 
-    color: $desc-cl;
+    color: $title-cl;
 
     @include for-tablet {
       font-size: $fs-xl;

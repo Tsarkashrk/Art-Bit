@@ -3,16 +3,9 @@
 
   position: relative;
 
+  padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
+
   @include d-flex-prm;
-
-  @include for-tablet {
-    margin: $mg-center;
-    padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
-  }
-
-  @include for-desktop {
-    padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
-  }
 
   &__img { 
     padding-top: 0.5rem;
@@ -149,7 +142,7 @@
 
   &__icon {
     @include for-tablet {
-      width: 25px;
+      width: 2.5rem;
     }
   }
 
