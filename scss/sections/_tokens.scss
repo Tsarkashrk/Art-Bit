@@ -62,6 +62,12 @@
     font-family: $regular-font;
 
     color: $page-cl;
+
+    cursor: pointer;
+
+    @include for-tablet {
+      font-size: $fs-m;
+    }
   }
 
   &__button {

@@ -1,0 +1,79 @@
+.footer {
+  @include block-settings;
+  @include d-flex-scn;
+  flex-direction: column;
+
+  padding: $mg-bw-sections $pd-hdr-around-mob $space-bw-box;
+
+  &__logo-group {
+    position: relative;
+
+    margin-bottom: $mg-bw-sections;
+
+    cursor: pointer;
+  }
+
+  &__blur {
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+
+    width: $slider-wd;
+
+    background: rgba(99, 226, 183, 0.34);
+
+    filter: blur(4.2rem);
+
+    border-radius: 1.2rem;
+  }
+
+  &__text-group {
+    padding-bottom: $subs-pd-top;
+
+    font-family: $regular-font;
+    font-size: $fs-xs;
+
+    color: $desc-cl;
+
+    @include for-tablet {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 20px;
+    }
+  }
+
+  &__text {
+    padding-bottom: 1.6rem;
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  &__flags-group {
+    display: flex;
+    gap: $pd-hdr-around-mob;
+
+    padding-bottom: $subs-pd-top;
+  }
+
+  &__flag {
+    cursor: pointer;
+  }
+
+  &__icons-group {
+    @include d-flex-scn;
+  }
+
+  &__icon {
+    width: $subs-pd-top;
+    height: $subs-pd-top;
+    background-color: $desc-cl;
+
+    border: 2px solid $desc-cl;
+    border-radius: $pltfrms-pd-top;
+
+    cursor: pointer;
+  }
+}
