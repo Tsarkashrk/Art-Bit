@@ -1,0 +1,39 @@
+.image-slider {
+  margin-top: 4rem;
+
+  .image-slider__slide {
+    width: $slider-wd;
+  }
+
+  .image-slider__image {
+    width: $slider-wd;
+  }
+
+  &__image {
+    @include d-flex-scn;
+    flex-direction: column;
+
+    width: $slider-wd;
+  }
+
+  &__name {
+    margin: $mg-center;
+    padding-top: 1.5rem;
+
+    font-family: $semibold-font;
+    font-size: $fs-xxs;
+    
+    color: $prm-cl;
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .image-slider {
+    display: none;
+  }
+}
+
+.slider .swiper-container {
+  width: $full-wd;
+  height: $full-wd;
+}

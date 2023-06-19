@@ -1,11 +1,21 @@
 .header {
-  position: relative;
+  @include block-settings;
 
-  max-width: $max-wd;
+  position: relative;
 
   @include d-flex-prm;
 
+  @include for-tablet {
+    margin: $mg-center;
+    padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
+  }
+
+  @include for-desktop {
+    padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
+  }
+
   &__img { 
+    padding-top: 0.5rem;
     width: 3.6rem;
     
     @include for-tablet {
@@ -15,20 +25,16 @@
 
   &__blur {
     position: absolute;
-    top: -0.5rem;
-    left: 0.5rem;
-
-    width: 5rem;
+    top: 1rem;
+    left: -2rem;
 
     background: rgba(16, 41, 33, 0.34);
 
-    filter: blur(2rem);
+    filter: blur(4.2rem);
 
     @include for-tablet {
-      top: -1rem;
+      top: 1.5rem;
       left: $reset-space;
-
-      width: 7rem;
     }
 
     @include for-desktop {
@@ -63,31 +69,25 @@
     @include for-desktop {
       position: relative;
 
-      transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease;
 
       &:hover {
         color: $desc-cl;
-
+  
         &::after {
-          opacity: 1;
+          content: '';
+
+          position:absolute;
+          bottom: -0.5rem;
+          left: $reset-space;
+
+          width: 3.4rem;
+          height: 0.2rem;
+
+          background: $scn-cl;
+    
+          color: $prm-cl;
         }
-      }
-
-      &::after {
-        content: '';
-
-        position: absolute;
-        left: 0;
-        bottom: -0.4rem;
-
-        height: 2px;
-        width: 3.4rem;
-
-        background: $scn-cl;
-
-        opacity: 0;
-        
-        transition: all 0.2s ease-in-out;
       }
 
       &:active {
@@ -149,7 +149,7 @@
 
   &__icon {
     @include for-tablet {
-      width: 2.5rem;
+      width: 25px;
     }
   }
 

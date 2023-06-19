@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="./scss/main.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Art Bit</title>
 </head>
 <body>
   <header class="header">
     <a class="header__logo" href="#">
       <img class="header__img" src="./media/logo.svg" alt="logo">
-      <img class="header__blur" src="./media/logo.svg" alt="blue">
+      <img class="header__blur" src="./media/logo.svg" alt="">
     </a>
 
     <nav class="header__nav">
@@ -33,28 +33,30 @@
     </button>
 
     <div class="header__menu">
-      <img class="header__icon" src="./media/menu.svg" alt="menu-icon">
+      <img class="header__icon" src="./media/menu.svg" alt="">
     </div>
   </header>
 
   <main class="main">
     <section class="greeting">
       <div class="greeting__companies">
-        <img class="greeting__img" src="./media/platforms.svg" alt="platforms">
+        <img class="greeting__img" src="./media/platforms.svg" alt="">
       </div>
 
       <div class="greeting__info">
         <h1 class="greeting__title">
-          <span class="greeting__title--primary">Поиск прибыльных р2р объявлений</span>
-          <span class="greeting__title--secondary">обмена</span>
+          <span class="greeting__title--white">Поиск прибыльных р2р объявлений</span>
+          <span class="greeting__title--green">обмена</span>
         </h1>
         <p class="greeting__description">Крипто и фиат-активов</p>
 
-        <a href="#" class="button">
-          <span class="button__title">
-            Попробовать
-          </span>
-        </a>
+        <div class="greeting__button">
+          <a href="#" class="button__link">
+            <span class="button__title">
+              Попробовать
+            </span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -64,64 +66,68 @@
         <p class="text-group__title">5 площадок</p>
       </div>
 
-      <div class="slider slider--primary platforms__slider swiper">
-        <div class="slider__wrapper swiper-wrapper">
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <img class="slider__image" src="./media/binance.svg" alt="binance">
-              <p class="slider__name">Binance</p>
+      <div class="image-slider swiper">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/binance.svg" alt="">
+              <p class="image-slider__name">Binance</p>
             </div>
           </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <img class="slider__image" src="./media/okx.svg" alt="okx">
-              <p class="slider__name">OKX</p>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/okx.svg" alt="">
+              <p class="image-slider__name">OKX</p>
             </div>
           </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <img class="slider__image" src="./media/bybit.svg" alt="bybit">
-              <p class="slider__name">ByBit</p>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/bybit.svg" alt="">
+              <p class="image-slider__name">ByBit</p>
             </div>
           </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <img class="slider__image" src="./media/huobi.svg" alt="huobi">
-              <p class="slider__name">Huobi</p>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/huobi.svg" alt="">
+              <p class="image-slider__name">Huobi</p>
             </div>
           </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <img class="slider__image" src="./media/huobi2.svg" alt="huobi">
-              <p class="slider__name">Huobi</p>
+          <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+              <img class="image-slider__element" src="./media/huobi2.svg" alt="">
+              <p class="image-slider__name">Huobi</p>
             </div>
           </div>
         </div>
+
+        <!-- <div class="swiper-pagination"></div>
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <div class="swiper-scrollbar"></div> -->
+
       </div>
 
-      <div class="elements-group elements-group--horizontal">
-        <div class="elements-group__element">
-          <img src="./media/binance.svg" alt="binance" class="platforms__image">
+      <div class="platforms__list">
+        <div class="platforms__element">
+          <img src="./media/binance.svg" alt="" class="platforms__image">
           <p class="platforms__title">Binance</p>
         </div>
-        <div class="elements-group__element">
-          <img src="./media/okx.svg" alt="okx" class="platforms__image">
+        <div class="platforms__element">
+          <img src="./media/okx.svg" alt="" class="platforms__image">
           <p class="platforms__title">OKX</p>
         </div>
-        <div class="elements-group__element">
-          <img src="./media/bybit.svg" alt="bybit" class="platforms__image">
+        <div class="platforms__element">
+          <img src="./media/bybit.svg" alt="" class="platforms__image">
           <p class="platforms__title">ByBit</p>
         </div>
-        <div class="elements-group__element">
-          <img src="./media/huobi.svg" alt="huobi" class="platforms__image">
+        <div class="platforms__element">
+          <img src="./media/huobi.svg" alt="" class="platforms__image">
           <p class="platforms__title">Huobi</p>
         </div>
-        <div class="elements-group__element platforms__element">
-          <img src="./media/huobi2.svg" alt="huobi" class="platforms__image">
+        <div class="platforms__element">
+          <img src="./media/huobi2.svg" alt="" class="platforms__image">
           <p class="platforms__title">Huobi</p>
         </div>
       </div>
@@ -133,36 +139,36 @@
         <p class="text-group__title">5 токенов</p>
       </div>
 
-      <div class="elements-group elements-group--horizontal">
-        <div class="elements-group__element tokens__element">
-          <img class="tokens__image" src="./media/binance-token.svg" alt="binance">
+      <div class="tokens__elements-group">
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/binance-token.svg" alt="">
           <p class="tokens__name">Binance</p>
           <p class="tokens__description">Подробнее</p>
         </div>
-        <div class="elements-group__element tokens__element">
-          <img class="tokens__image" src="./media/okx-token.svg" alt="okx">
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/okx-token.svg" alt="">
           <p class="tokens__name">OKX</p>
           <p class="tokens__description">Подробнее</p>
         </div>
-        <div class="elements-group__element tokens__element">
-          <img class="tokens__image" src="./media/bybit-token.svg" alt="bybit">
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/bybit-token.svg" alt="">
           <p class="tokens__name">Bybit</p>
           <p class="tokens__description">Подробнее</p>
         </div>
-        <div class="elements-group__element tokens__element">
-          <img class="tokens__image" src="./media/bybit-token2.svg" alt="bybit">
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/bybit-token2.svg" alt="">
           <p class="tokens__name">Bybit</p>
           <p class="tokens__description">Подробнее</p>
         </div>
-        <div class="elements-group__element tokens__element">
-          <img class="tokens__image" src="./media/huobi-token.svg" alt="huobi">
+        <div class="tokens__element">
+          <img class="tokens__image" src="./media/huobi-token.svg" alt="">
           <p class="tokens__name">Huobi</p>
           <p class="tokens__description">Подробнее</p>
         </div>
       </div>
 
       <div class="tokens__button">
-        <a href="#" class="button">
+        <a href="#" class="button__link">
           <span class="button__title">
             Попробовать
           </span>
@@ -176,33 +182,33 @@
         <p class="text-group__title">Банки</p>
       </div>
 
-      <div class="elements-group elements-group--horizontal">
-        <div class="elements-group__element banks__element">
-          <img class="banks__image" src="./media/sberbank.svg" alt="sberbank">
+      <div class="banks__elements-group">
+        <div class="banks__element">
+          <img class="banks__image" src="./media/sberbank.svg" alt="">
           <p class="banks__name">Сбербанк</p>
         </div>
-        <div class="elements-group__element banks__element">
-          <img class="banks__image" src="./media/tinkof.svg" alt="tinkof">
+        <div class="banks__element">
+          <img class="banks__image" src="./media/tinkof.svg" alt="">
           <p class="banks__name">Тинькоф</p>
         </div>
-        <div class="elements-group__element banks__element">
-          <img class="banks__image" src="./media/qiwi.svg" alt="qiwi">
+        <div class="banks__element">
+          <img class="banks__image" src="./media/qiwi.svg" alt="">
           <p class="banks__name">QIWI</p>
         </div>
-        <div class="elements-group__element banks__element">
-          <img class="banks__image" src="./media/raiffeisen.svg" alt="raiffeisen">
+        <div class="banks__element">
+          <img class="banks__image" src="./media/raiffeisen.svg" alt="">
           <p class="banks__name">Райфайзен</p>
         </div>
-        <div class="elements-group__element banks__element">
-          <img class="banks__image" src="./media/alfa.svg" alt="alfabank">
+        <div class="banks__element">
+          <img class="banks__image" src="./media/alfa.svg" alt="">
           <p class="banks__name">Альфа</p>
         </div>
       </div>
 
       <div class="banks__description-group">
-        <img class="banks__arrow-left" src="./media/arrowLeft.svg" alt="arrow-left-icon">
+        <img class="banks__arrow-left" src="./media/arrowLeft.svg" alt="">
         <p class="banks__description">более 30 банков</p>
-        <img class="banks__arrow-right" src="./media/arrowRight.svg" alt="arrow-right-icon">
+        <img class="banks__arrow-right" src="./media/arrowRight.svg" alt="">
       </div>
     </section>
 
@@ -214,7 +220,7 @@
 
       <div class="work__info">
         <div class="work__preview">
-          <img class="work__image" src="./media/desktop.svg" alt="desktop">
+          <img class="work__image" src="./media/desktop.svg" alt="">
         </div>
 
         <div class="work__paragraphs">
@@ -232,11 +238,13 @@
             </span>
           </p>
 
-          <a href="#" class="button button--secondary">
-            <span class="button__title">
-              Попробовать
-            </span>
-          </a>
+          <div class="work__button">
+            <a href="#" class="button__link">
+              <span class="button__title">
+                Попробовать
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -247,11 +255,11 @@
         <p class="text-group__title">Кому подойдёт</p>
       </div>
 
-      <div class="elements-group elements-group--vertical">
-        <div class="elements-group__element">
+      <div class="suitable__elements-group">
+        <div class="suitable__element">
           <div class="suitable__text-group">
             <div class="suitable__title-group">
-              <img src="./media/professional-icon.svg" alt="icon">
+              <img src="./media/enthusiast-icon.svg" alt="">
               <div class="suitable__title">Профессионализм</div>
             </div>
             <div class="suitable__description">
@@ -271,10 +279,10 @@
             </div>
           </div>
         </div>
-        <div class="elements-group__element">
+        <div class="suitable__element">
           <div class="suitable__text-group">
             <div class="suitable__title-group">
-              <img src="./media/enthusiast-icon.svg" alt="icon">
+              <img src="./media/professional-icon.svg" alt="">
               <div class="suitable__title">Энтузиазм</div>
             </div>
             <div class="suitable__description">
@@ -304,8 +312,8 @@
           <p class="text-group__title">Преимущества</p>
         </div>
   
-        <div class="elements-group elements-group--vertical">
-          <div class="elements-group__element">
+        <div class="advantages__elements-group">
+          <div class="advantages__element">
             <div class="advantages__title-group">
               <div class="advantages__title">СКОРОСТЬ</div>
               <svg class="advantages__arrow" width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +325,7 @@
             </div>
           </div>
   
-          <div class="elements-group__element">
+          <div class="advantages__element">
             <div class="advantages__title-group">
               <div class="advantages__title">РЕЛЕВАНТНОСТЬ</div>
               <svg class="advantages__arrow" width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
@@ -329,7 +337,7 @@
             </div>
           </div>
   
-          <div class="elements-group__element">
+          <div class="advantages__element">
             <div class="advantages__title-group">
               <div class="advantages__title">УВЕДОМЛЕНИЯ</div>
               <svg class="advantages__arrow" width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +349,7 @@
             </div>
           </div>
   
-          <div class="elements-group__element">
+          <div class="advantages__element">
             <div class="advantages__title-group">
               <div class="advantages__title">СТОИМОСТЬ</div>
               <svg class="advantages__arrow" width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg">
@@ -355,320 +363,9 @@
         </div>
       </div>
     </section>
-
-    <section class="subscription">
-      <div class="text-group">
-        <p class="text-group__page">07.</p>
-        <p class="text-group__title">Подписка</p>
-      </div>
-
-      <div class="slider slider--secondary subscription__slider swiper">
-        <div class="slider__wrapper swiper-wrapper">
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <div class="slider__main">
-                <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">                
-                <div class="slider__block">
-                  <div class="slider__title">Базовая подписка</div>
-                  <div class="slider__price">$0</div>
-                  <div class="slider__term">навсегда</div>
-                  <div class="slider__line"></div>
-                  <div class="slider__description">
-                    Бесплатный доступ к p2p сканеру с ограничеями в частоте обновления и без уведомлений
-                  </div>
-                </div>
-                <a href="#" class="button slider__button">
-                  <span class="button__title">
-                    Начать работу
-                  </span>
-                </a>
-              </div>
-              <div class="slider__suitable">
-                <p class="slider__text">
-                  Подойдет для тех, кто хочет познакомится с фунцкионалом сканера
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <div class="slider__main">
-                <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-                <div class="slider__block">
-                  <div class="slider__title">1BIT</div>
-                  <div class="slider__price">$50</div>
-                  <div class="slider__term">на месяц</div>
-                  <div class="slider__line"></div>
-                  <div class="slider__description">
-                    Полный доступ к p2p-сканеру без ограничений
-                  </div>
-                </div>
-                <a href="#" class="button slider__button">
-                  <span class="button__title">
-                    Заказать
-                  </span>
-                </a>
-              </div>
-              <div class="slider__suitable">
-                <p class="slider__text">
-                  Основной тариф для профессиональных p2p-трейдеров
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <div class="slider__main">
-                <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-                <div class="slider__block">
-                  <div class="slider__title">4BIT</div>
-                  <div class="slider__price">$170</div>
-                  <div class="slider__term">на четыре месяца</div>
-                  <div class="slider__line"></div>
-                  <div class="slider__description">
-                    Полный доступ к p2p-сканеру без ограничений с 15% скидкой
-                  </div>
-                </div>
-                <a href="#" class="button slider__button">
-                  <span class="button__title">
-                    Заказать
-                  </span>
-                </a>
-              </div>
-              <div class="slider__suitable">
-                <p class="slider__text">
-                  Основной тариф для профессиональных p2p-трейдеров с 15% скидкой
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__element">
-              <div class="slider__main">
-                <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-                <div class="slider__block">
-                  <div class="slider__title">8BIT</div>
-                  <div class="slider__price">$300</div>
-                  <div class="slider__term">на восемь месяцев</div>
-                  <div class="slider__line"></div>
-                  <div class="slider__description">
-                    Полный доступ к p2p-сканеру без ограничений с 25% скидкой
-                  </div>
-                </div>
-                <a href="#" class="button slider__button">
-                  <span class="button__title">
-                    Заказать
-                  </span>
-                </a>
-              </div>
-              <div class="slider__suitable">
-                <p class="slider__text">
-                  Самый выгодный тариф для профессиональных p2p-трейдеров и с 25% скидкой
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider__pagination swiper-pagination"></div>
-      </div>
-
-      <div class="elements-group elements-group--horizontal subscription__wrapper">
-        <div class="elements-group__element">
-          <div class="slider__main">
-            <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-            <div class="slider__block">
-              <div class="slider__title">Базовая подписка</div>
-              <div class="slider__price">$0</div>
-              <div class="slider__term">навсегда</div>
-              <div class="slider__line"></div>
-              <div class="slider__description">
-                Бесплатный доступ к p2p сканеру с ограничеями в частоте обновления и без уведомлений
-              </div>
-            </div>
-            <a href="#" class="button slider__button">
-              <span class="button__title">
-                Начать работу
-              </span>
-            </a>
-          </div>
-          <div class="slider__suitable">
-            <p class="slider__text">
-              Подойдет для тех, кто хочет познакомится с фунцкионалом сканера
-            </p>
-          </div>
-        </div>
-
-        <div class="elements-group__element slider__slide swiper-slide">
-          <div class="slider__main">
-            <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-            <div class="slider__block">
-              <div class="slider__title">1BIT</div>
-              <div class="slider__price">$50</div>
-              <div class="slider__term">на месяц</div>
-              <div class="slider__line"></div>
-              <div class="slider__description">
-                Полный доступ к p2p-сканеру без ограничений
-              </div>
-            </div>
-            <a href="#" class="button slider__button">
-              <span class="button__title">
-                Заказать
-              </span>
-            </a>
-          </div>
-          <div class="slider__suitable">
-            <p class="slider__text">
-              Основной тариф для профессиональных p2p-трейдеров
-            </p>
-          </div>
-        </div>
-
-        <div class="elements-group__element slider__slide swiper-slide">
-          <div class="slider__main">
-            <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-            <div class="slider__block">
-              <div class="slider__title">4BIT</div>
-              <div class="slider__price">$170</div>
-              <div class="slider__term">на четыре месяца</div>
-              <div class="slider__line"></div>
-              <div class="slider__description">
-                Полный доступ к p2p-сканеру без ограничений с 15% скидкой
-              </div>
-            </div>
-            <a href="#" class="button slider__button">
-              <span class="button__title">
-                Заказать
-              </span>
-            </a>
-          </div>
-          <div class="slider__suitable">
-            <p class="slider__text">
-              Основной тариф для профессиональных p2p-трейдеров с 15% скидкой
-            </p>
-          </div>
-        </div>
-
-        <div class="elements-group__element slider__slide swiper-slide">
-          <div class="slider__main">
-            <img src="./media/subscription-wrapper.svg" alt="wrapper" class="slider__background-image">
-            <div class="slider__block">
-              <div class="slider__title">8BIT</div>
-              <div class="slider__price">$300</div>
-              <div class="slider__term">на восемь месяцев</div>
-              <div class="slider__line"></div>
-              <div class="slider__description">
-                Полный доступ к p2p-сканеру без ограничений с 25% скидкой
-              </div>
-            </div>
-            <a href="#" class="button slider__button">
-              <span class="button__title">
-                Заказать
-              </span>
-            </a>
-          </div>
-          <div class="slider__suitable">
-            <p class="slider__text">
-              Самый выгодный тариф для профессиональных p2p-трейдеров и с 25% скидкой
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <div class="text-group">
-        <p class="text-group__page">08.</p>
-        <p class="text-group__title">Отзывы</p>
-      </div>
-
-      <div class="slider slider--secondary reviews__slider swiper">
-        <div class="slider__wrapper swiper-wrapper">
-          <div class="slider__slide swiper-slide">
-            <div class="slider__container">
-              <div class="slider__group">
-                <img class="slider__image" src="./media/review1.svg" alt="image">
-                <p class="slider__name">Имя Отчество</p>
-              </div>
-              <img class="slider__rating" src="./media/rating.svg" alt="rating">
-              <p class="slider__symbol">"</p>
-              <p class="slider__description">Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень круто, спасибо</p>
-            </div>
-          </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__container">
-              <div class="slider__group">
-                <img class="slider__image" src="./media/review2.svg" alt="image">
-                <p class="slider__name">Имя Отчество</p>
-              </div>
-              <img class="slider__rating" src="./media/rating.svg" alt="rating">
-              <p class="slider__symbol">"</p>
-              <p class="slider__description">Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень круто, спасибо</p>
-            </div>
-          </div>
-
-          <div class="slider__slide swiper-slide">
-            <div class="slider__container">
-              <div class="slider__group">
-                <img class="slider__image" src="./media/review3.svg" alt="image">
-                <p class="slider__name">Имя Отчество</p>
-              </div>
-              <img class="slider__rating" src="./media/rating.svg" alt="rating">
-              <p class="slider__symbol">"</p>
-              <p class="slider__description">Ставлю 4 из 5, просто потому, что я гнилой человек. Но очень круто, спасибо</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider__button swiper-button-prev"></div>
-        <div class="slider__button swiper-button-next"></div>
-      </div>
-    </section>
-
-    <section class="developers">
-      <div class="text-group">
-        <p class="text-group__page">09.</p>
-        <p class="text-group__title">Разработчикам</p>
-      </div>
-
-      <div class="developers__description">
-        Воспользуйтесь нашим API для поиска лучшего предложения обмена фиат или крипто-активов на разных торговых площадках. Или настройте уведомления, чтобы не пропустить лучшие условия сделки
-Описание API и исходные коды доступны в репозитории на <span class="developers__description--secondary">github</span>
-      </div>
-    </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo-group">
-      <img src="./media/logo.svg" alt="blur" class="footer__blur">
-      <img src="./media/logo.svg" alt="logo" class="footer__logo">
-    </div>
-
-    <div class="footer__text-group">
-      <p class="footer__text">Преимущества</p>
-      <p class="footer__text">Peer-to-peer сканнер</p>
-      <p class="footer__text">Найти лучший курс обмена</p>
-      <p class="footer__text">Войти / Регистрация</p>
-      <p class="footer__text">Поддержка</p>
-      <p class="footer__text">Подписка на сервис</p>
-      <p class="footer__text">Отзывы</p>
-      <p class="footer__text">Разработчикам</p>
-    </div>
-
-    <div class="footer__flags-group">
-      <img src="./media/flag-icon1.svg" alt="United Kingdom" class="footer__flag">
-      <img src="./media/flag-icon2.svg" alt="China" class="footer__flag">
-      <img src="./media/flag-icon3.svg" alt="Turkey" class="footer__flag">
-    </div>
-
-    <div class="footer__icons-group">
-      <div class="footer__icon"></div>
-      <img src="./media/telegram-icon.svg" alt="telegram" class="footer__icon">
-      <img src="./media/github-icon.svg" alt="github" class="footer__icon">
-    </div>
+    
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

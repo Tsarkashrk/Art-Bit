@@ -1,23 +1,22 @@
 .tokens {
+  @include block-settings;
+  padding: $mg-bw-sections $pd-hdr-around-mob $pltfrms-pd-top;
 
-  >.elements-group {
-    @include d-flex-scn;
-    flex-wrap: wrap;
+  @include for-desktop {
+    padding: $mg-bw-sections $pd-hdr-around-mob;
+  }
+
+  &__elements-group {
+    @include d-grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
     row-gap: $tokens-gap;
     column-gap: 5%;  
 
-    @include for-tablet {
-      column-gap: 10%;
-    }
+    padding: 4.3rem $reset-space 6rem;
+  }
 
-    @include for-desktop {
-      row-gap: $mg-bw-sections;
-    }
-
-    .tokens__element {
-      position: relative;
-
-    width: 16.2rem;
+  &__element {
+    position: relative;
 
     padding: 2.1rem $reset-space;
 
@@ -26,14 +25,6 @@
     border: $border $page-cl;
     
     color: $prm-cl;
-
-    @include for-tablet {
-      width: 20rem;
-    }
-
-    @include for-desktop {
-      width: 30rem;
-    }
 
     &::before {
       content: '';
@@ -47,7 +38,6 @@
       height: calc(100% + 0.4rem);
 
       background-color: $bg-cl-prm;
-    }
     }
   }
 
@@ -70,15 +60,8 @@
     position: relative;
 
     font-family: $regular-font;
-    font-size: $fs-xs;
 
     color: $page-cl;
-
-    cursor: pointer;
-
-    @include for-tablet {
-      font-size: $fs-m;
-    }
   }
 
   &__button {

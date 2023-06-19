@@ -45,7 +45,6 @@
       $prm-cl: #fff;
       $scn-cl: #63E2B7;
       $page-cl: #484848;
-      $title-cl: #c6c6c6;
       $desc-cl: #989898;
 
 // Other variables
@@ -56,32 +55,22 @@
       $l-res: 1200px;
       $s-res: 375px;
 
-      // Gap
-
-      $main-gap-mobile: 8.5rem;
-      $main-gap-tablet: 10rem;
-
       // Margin
 
-      $mg-bw-sections: 8.5rem auto;
+      $mg-bw-sections: 8.5rem;
       $mg-work-section: 3.3rem;
       $space-bw-box: 2rem;
 
       // Padding 
 
-      $body-padding: 7rem 1.3rem;
-      $body-main-padding: 2rem 0;
-      $main-pd: 20rem 0;
       $pd-hdr-top-mob: 3rem;
       $pd-hdr-around-mob: 1.3rem;
       $pd-hdr-bottom-mob: 9rem;
       $pd-around-mob: 0 1.3rem;
       $pltfrms-pd-top: 10rem;
-      $subs-pd-top: 5rem;
 
       // Width
 
       $slider-wd: 9rem !important;
-      $banks-ws-primary: 9.2rem;
-      $banks-wd-secondary: 14rem;
+      $banks-wd: 14rem;
       $tokens-gap: 4rem;

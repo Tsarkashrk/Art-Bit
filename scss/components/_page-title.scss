@@ -1,11 +1,10 @@
 .text-group {
-  margin-bottom: 1rem;
 
   &__page {
     font-family: $regular-font;
     font-size: $fs-xxs;
 
-    color: $desc-cl;
+    color: $page-cl;
 
     @include for-tablet {
       font-size: $fs-xm;
@@ -16,7 +15,7 @@
     font-family: $regular-font;
     font-size: $fs-m;
 
-    color: $title-cl;
+    color: $desc-cl;
 
     @include for-tablet {
       font-size: $fs-xl;

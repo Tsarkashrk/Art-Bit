@@ -1,29 +1,23 @@
 .advantages {
-  max-width: 100%;
-
-  padding: $main-gap-mobile 0;
-
+  padding: $mg-bw-sections $reset-space;
   background-color: $bg-cl-scn;
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    @include block-settings;
+    padding: $reset-space $pd-hdr-around-mob
+  }
 
-    margin: 0 auto;
-    padding: 0 13px;
-
-    max-width: $max-wd;
+  &__elements-group {
+    padding-top: $pd-hdr-top-mob;
   }
 
   &__element {
     padding: $pd-hdr-top-mob; 
+    margin-bottom: $pd-hdr-top-mob;
 
     border: $border #000;
 
     cursor: pointer;
-
-    transition: all 0.25s ease-in-out;
 
     &:hover {
       background-color: $bg-box-cl;
@@ -91,6 +85,41 @@
       right: $reset-space;
 
       @include d-flex-scn;
+    }
+
+    &__play-icon {
+      position: relative;
+
+      padding: 1.7rem 2.7rem;
+
+      border: $border $prm-cl;
+
+      &::before {
+        content: '';
+    
+        position: absolute;
+        top: -0.2rem;
+        left: 4rem;
+    
+        width: calc(100% - 8rem);
+        height: calc(100% + 0.4rem);
+    
+        background-color: black;
+    
+        transition: all 1s ease-in-out;
+    
+        transform: scaleY(1);
+      }
+    
+      &:hover::before {
+        transform: scaleY(0);
+      }
+    
+      &:active {
+        border-color: $desc-cl;
+        color: $desc-cl;
+        fill: $desc-cl;
+      }
     }
 
     &__title {

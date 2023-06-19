@@ -1,20 +1,22 @@
 .greeting {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 
-  @include for-tablet {
-    margin-bottom: 11rem;
-  }
+  @include block-settings;
+
+  padding: $pd-around-mob;
 
   @include for-tablet {
     position: relative;
 
     flex-direction: row;
     align-items: center;
+
+    padding-top: 12.5rem;
   }
 
   @include for-desktop {
+    padding: 11rem $pd-hdr-around-mob $pd-around-mob;
   }
 
   &__companies {
@@ -43,11 +45,11 @@
     font-family: $bold-font;
     font-size: $fs-xxm;
 
-    &--primary {
+    &--white {
       color: $prm-cl;
     }
 
-    &--secondary {
+    &--green {
       color: $scn-cl;
     }
 
