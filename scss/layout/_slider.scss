@@ -6,6 +6,7 @@
     }
 
     .slider {
+
       &__slide {
         width: $slider-wd;
       }
@@ -30,6 +31,6 @@
   }
 
   &--secondary {
-
+    display: none;
   }
 }

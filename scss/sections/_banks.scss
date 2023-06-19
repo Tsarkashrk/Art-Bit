@@ -17,8 +17,6 @@
 
     width: $banks-ws-primary;
 
-    text-align: center;
-
     @include for-tablet {
       width: $banks-wd-secondary;
     }
@@ -40,10 +38,10 @@
     bottom: 1.5rem;
 
     width: $banks-ws-primary;
+    text-align: center;
 
     font-family: $regular-font;
     font-size: $fs-xxs;
-    text-align: center;
 
     color: $desc-cl;
 

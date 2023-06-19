@@ -1,10 +1,6 @@
 .tokens {
 
-  @include for-desktop {
-    
-  }
-
-  &__elements-group {
+  >.elements-group {
     @include d-flex-scn;
     flex-wrap: wrap;
     row-gap: $tokens-gap;
@@ -17,10 +13,9 @@
     @include for-desktop {
       row-gap: $mg-bw-sections;
     }
-  }
 
-  &__element {
-    position: relative;
+    .tokens__element {
+      position: relative;
 
     width: 16.2rem;
 
@@ -52,6 +47,7 @@
       height: calc(100% + 0.4rem);
 
       background-color: $bg-cl-prm;
+    }
     }
   }
 

@@ -1,5 +1,7 @@
 .elements-group {
   display: flex;
+  justify-content: center;
+  align-self: center;
 
   &--horizontal {
     flex-direction: row;
