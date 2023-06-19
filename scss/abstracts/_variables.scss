@@ -1,0 +1,78 @@
+// General ==========================================================================
+
+      $reset-space: 0;
+
+      // Margin
+
+      $mg-center: 0 auto;
+
+      // Width
+
+      $max-wd: 1226px;
+      $full-wd: 100%;
+
+      // Background-color
+
+      $bg-cl-prm: #101014;
+      $bg-cl-scn: #fff;
+      $bg-box-cl: #000;
+
+      //Border
+
+      $border: 2px solid;
+
+      // Font-family
+
+      $regular-font: "MontserratRegular", sans-serif;
+      $medium-font: "MontserratMedium", sans-serif;
+      $semibold-font: "MontserratSemiBold", sans-serif;
+      $bold-font: "MontserratBold", sans-serif;
+
+      // Font-size 
+
+      $fs-xxl: 4rem;
+      $fs-xl: 3.4rem;
+      $fs-l: 3rem;
+      $fs-xxm: 2.6rem;
+      $fs-xm: 2.3rem;
+      $fs-m: 2rem;
+      $fs-s: 1.8rem; 
+      $fs-xs: 1.6rem;
+      $fs-xxs: 1.4rem;
+
+      // Color
+
+      $prm-cl: #fff;
+      $scn-cl: #63E2B7;
+      $page-cl: #484848;
+      $title-cl: #c6c6c6;
+      $desc-cl: #989898;
+
+// Other variables
+
+      // Breakpoints
+
+      $m-res: 834px;
+      $l-res: 1200px;
+      $s-res: 375px;
+
+      // Margin
+
+      $mg-bw-sections: 8.5rem;
+      $mg-work-section: 3.3rem;
+      $space-bw-box: 2rem;
+
+      // Padding 
+
+      $pd-hdr-top-mob: 3rem;
+      $pd-hdr-around-mob: 1.3rem;
+      $pd-hdr-bottom-mob: 9rem;
+      $pd-around-mob: 0 1.3rem;
+      $pltfrms-pd-top: 10rem;
+      $subs-pd-top: 5rem;
+
+      // Width
+
+      $slider-wd: 9rem !important;
+      $banks-wd: 14rem;
+      $tokens-gap: 4rem;

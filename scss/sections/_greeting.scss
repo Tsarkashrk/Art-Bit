@@ -1,0 +1,84 @@
+.greeting {
+  display: flex;
+  flex-direction: column;
+
+  @include block-settings;
+
+  padding: $pd-around-mob;
+
+  @include for-tablet {
+    position: relative;
+
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 12.5rem;
+  }
+
+  @include for-desktop {
+    padding: 11rem $pd-hdr-around-mob $pd-around-mob;
+  }
+
+  &__companies {
+    margin: 0 auto;
+
+    @include for-tablet {
+      position: absolute;
+      right: $pd-hdr-around-mob;
+      order: 2;
+
+      width: 60%;
+    }
+  }
+
+  &__img {
+    width: $full-wd;
+    max-width: 46.9rem;
+
+    @include for-tablet {
+      min-width: 46.8rem;
+      max-width: 69.5rem;
+    }
+  }
+
+  &__title {
+    font-family: $bold-font;
+    font-size: $fs-xxm;
+
+    &--white {
+      color: $prm-cl;
+    }
+
+    &--green {
+      color: $scn-cl;
+    }
+
+    @include for-tablet {
+      max-width: 80%;
+
+      font-size: $fs-xl;
+    }
+
+    @include for-desktop {
+      font-size: $fs-xxl;
+    }
+  }
+
+  &__description {
+    margin: 1.6rem $reset-space 2rem;
+    padding-bottom: 3.5rem;
+
+    font-family: $regular-font;
+    font-size: $fs-xs;
+
+    color: $desc-cl;
+
+    @include for-tablet {
+      font-size: 1.8rem;
+    }
+
+    @include for-desktop {
+      padding-bottom: 4.5rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// Abstracts 
+
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// Base
+
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/body";
+
+// Components
+
+@import "./components/button";
+@import "./components/slider-platforms";
+@import "./components/page-title";
+
+// Layout
+
+@import "./layout/header";
+@import "./layout/footer";
+
+// Sections 
+
+@import "./sections/greeting";
+@import "./sections/platforms";
+@import "./sections/tokens";
+@import "./sections/banks";
+@import "./sections/work";
+@import "./sections/suitable";
+@import "./sections/advantages";
+@import "./sections/subscription";
+@import "./sections/reviews";
+@import "./sections/developers";

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "MontserratRegular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url(/Art-Bit/fonts/Montserrat-Regular.woff2) format("woff2"),
+    url(/Art-Bit/fonts/Montserrat-Regular.woff) format("woff"),
+    url(/Art-Bit/fonts/Montserrat-Regular.eot) format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratMedium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url(/Art-Bit/fonts/Montserrat-Medium.woff2) format("woff2"),
+    url(/Art-Bit/fonts/Montserrat-Medium.woff) format("woff"),
+    url(/Art-Bit/fonts/Montserrat-Medium.eot) format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratSemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"),
+    url(/Art-Bit/fonts/Montserrat-SemiBold.woff2) format("woff2"),
+    url(/Art-Bit/fonts/Montserrat-SemiBold.woff2) format("woff"),
+    url(/Art-Bit/fonts/Montserrat-SemiBold.eot) format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url(/Art-Bit/fonts/Montserrat-Bold.woff2) format("woff2"),
+    url(/Art-Bit/fonts/Montserrat-Bold.woff) format("woff"),
+    url(/Art-Bit/fonts/Montserrat-Bold.eot) format("eot");
+  font-display: swap;
+}

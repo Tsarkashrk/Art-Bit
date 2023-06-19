@@ -1,0 +1,49 @@
+.button__link {
+  position: relative;
+
+  padding: 1.7rem 2.7rem;
+
+  border: 2px solid $scn-cl;
+
+  font-family: $semibold-font;
+  font-size: $fs-s;
+
+  color: $scn-cl;
+
+  transition: all 0.2s ease;
+
+  @include for-tablet {
+    font-size: $fs-m;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -2px;
+    left: 40px;
+
+    width: calc(100% - 80px);
+    height: 6.2rem;
+
+    background-color: $bg-cl-prm;
+
+    transition: all 1s ease-in-out;
+
+    transform: scaleY(1);
+  }
+
+  &:hover::before {
+    transform: scaleY(0);
+  }
+
+  &:active {
+    border-color: $desc-cl;
+    color: $desc-cl;
+  }
+}
+
+.button__title {
+  position: relative;
+  z-index: 3;
+}

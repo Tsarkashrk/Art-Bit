@@ -1,0 +1,134 @@
+.advantages {
+  padding: $mg-bw-sections $reset-space;
+  background-color: $bg-cl-scn;
+
+  &__wrapper {
+    @include block-settings;
+    padding: $reset-space $pd-hdr-around-mob
+  }
+
+  &__elements-group {
+    padding-top: $pd-hdr-top-mob;
+  }
+
+  &__element {
+    padding: $pd-hdr-top-mob; 
+    margin-bottom: $pd-hdr-top-mob;
+
+    border: $border #000;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bg-box-cl;
+
+      .advantages__description {
+        color: $prm-cl;
+      }
+
+      .advantages__arrow {
+        stroke: $prm-cl;
+        fill: $prm-cl;
+      }
+    }
+  }
+
+  &__title-group {
+    @include d-flex-prm;
+
+    padding-bottom: 1.6rem;
+
+  }
+
+  &__title {
+    font-family: $medium-font;
+    font-size: $fs-xs;
+
+    color: $desc-cl;
+
+    @include for-tablet {
+      font-size: $fs-s;
+    }
+  }
+
+  &__arrow {
+    fill: $bg-box-cl;
+    stroke: $bg-box-cl;
+  }
+
+  &__description {
+    font-family: $regular-font;
+    font-size: $fs-xxs;
+
+    @include for-tablet {
+      font-size: $fs-xs;
+    }
+  }
+
+  &--black {  
+    @include block-settings;
+    padding: $mg-bw-sections $pd-hdr-around-mob;
+
+    &__video {
+      position: relative;
+    }
+
+    &__img {
+      width: $full-wd;
+    }
+
+    &__wrapper {
+      position: absolute;
+      top: $reset-space;
+      bottom: $reset-space;
+      left: $reset-space;
+      right: $reset-space;
+
+      @include d-flex-scn;
+    }
+
+    &__play-icon {
+      position: relative;
+
+      padding: 1.7rem 2.7rem;
+
+      border: $border $prm-cl;
+
+      &::before {
+        content: '';
+    
+        position: absolute;
+        top: -0.2rem;
+        left: 4rem;
+    
+        width: calc(100% - 8rem);
+        height: calc(100% + 0.4rem);
+    
+        background-color: black;
+    
+        transition: all 1s ease-in-out;
+    
+        transform: scaleY(1);
+      }
+    
+      &:hover::before {
+        transform: scaleY(0);
+      }
+    
+      &:active {
+        border-color: $desc-cl;
+        color: $desc-cl;
+        fill: $desc-cl;
+      }
+    }
+
+    &__title {
+      padding-top: 1.5rem;
+
+      font-family: $regular-font;
+      font-size: $fs-s;
+      
+      color: $prm-cl;
+    }
+  }
+}

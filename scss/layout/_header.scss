@@ -1,0 +1,156 @@
+.header {
+  @include block-settings;
+
+  position: relative;
+
+  padding: $pd-hdr-top-mob $pd-hdr-around-mob $pd-hdr-bottom-mob;
+
+  @include d-flex-prm;
+
+  &__img { 
+    padding-top: 0.5rem;
+    width: 3.6rem;
+    
+    @include for-tablet {
+      width: 5rem;
+    }
+  }
+
+  &__blur {
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+
+    background: rgba(16, 41, 33, 0.34);
+
+    filter: blur(4.2rem);
+
+    @include for-tablet {
+      top: 1.5rem;
+      left: $reset-space;
+    }
+
+    @include for-desktop {
+      left: $reset-space;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    font-family: $medium-font;
+
+    color: $prm-cl;
+
+    @include for-desktop {
+      display: flex;
+
+      font-size: $fs-xs;
+    }
+  }
+
+  &__list {
+    @include for-desktop {
+      display: flex;
+      gap: 5.5rem;
+
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    @include for-desktop {
+      position: relative;
+
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $desc-cl;
+  
+        &::after {
+          content: '';
+
+          position:absolute;
+          bottom: -0.5rem;
+          left: $reset-space;
+
+          width: 3.4rem;
+          height: 0.2rem;
+
+          background: $scn-cl;
+    
+          color: $prm-cl;
+        }
+      }
+
+      &:active {
+        color: $prm-cl;
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include for-desktop {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+
+      padding: 0.8rem 1rem;
+
+      font-family: $semibold-font;
+      font-size: $fs-s;
+
+      background-color: $scn-cl;
+
+      border: $border $scn-cl;
+
+      cursor: pointer;
+
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+
+        border-color: $desc-cl;
+  
+        color: $scn-cl;
+
+        & .header__user-icon {
+          stroke: $scn-cl;
+        }
+      }
+
+      &:active {
+        color: $desc-cl;
+
+        & .header__user-icon {
+          stroke: $desc-cl;
+        }
+      }
+    }
+  }
+
+  &__user-icon {
+    @include for-desktop {
+      width: 1.6rem;
+
+      stroke: black;
+    }
+  }
+
+  &__icon {
+    @include for-tablet {
+      width: 2.5rem;
+    }
+  }
+
+  &__menu {
+    cursor: pointer;
+
+    @include for-desktop {
+      display: none;
+    }
+  }
+}

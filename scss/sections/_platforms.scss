@@ -1,0 +1,57 @@
+.platforms {
+  margin: $pd-around-mob;
+  padding-top: $pltfrms-pd-top;
+
+  max-width: $max-wd;
+
+  @include for-desktop {
+    margin: 14.5rem auto $mg-center;
+    padding: $pltfrms-pd-top $pd-hdr-around-mob $reset-space;
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__image {
+    @include for-tablet {
+      width: $banks-wd;
+    }
+
+    @include for-desktop {
+      width: 21rem;
+      margin-top: 5rem;
+    }
+  }
+
+  &__title {
+    @include for-desktop {
+      font-size: $fs-m;
+    }
+  }
+}
+
+@media screen and (min-width: 834px) {
+  .platforms {
+    &__list {
+      @include d-flex-prm;
+
+      margin-top: 4rem;
+    }
+
+    &__element {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      padding-top: 1.5rem;
+
+      font-family: $semibold-font;
+      font-size: $fs-xxs;
+
+      color: $prm-cl;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.image-slider {
+  margin-top: 4rem;
+
+  @include for-tablet {
+    display: none;
+  }
+
+  &__slide {
+    width: $slider-wd;
+  }
+
+  &__image {
+    @include d-flex-scn;
+    flex-direction: column;
+
+    width: $slider-wd;
+  }
+
+  &__name {
+    margin: $mg-center;
+    padding-top: 1.5rem;
+
+    font-family: $semibold-font;
+    font-size: $fs-xxs;
+    
+    color: $prm-cl;
+  }
+}
+
+.slider .swiper-container {
+  width: $full-wd;
+  height: $full-wd;
+}

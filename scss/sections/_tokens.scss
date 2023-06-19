@@ -1,0 +1,76 @@
+.tokens {
+  @include block-settings;
+  padding: $mg-bw-sections $pd-hdr-around-mob $pltfrms-pd-top;
+
+  @include for-desktop {
+    padding: $mg-bw-sections $pd-hdr-around-mob;
+  }
+
+  &__elements-group {
+    @include d-grid;
+    grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+    row-gap: $tokens-gap;
+    column-gap: 5%;  
+
+    padding: 4.3rem $reset-space 6rem;
+  }
+
+  &__element {
+    position: relative;
+
+    padding: 2.1rem $reset-space;
+
+    text-align: center;
+
+    border: $border $page-cl;
+    
+    color: $prm-cl;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+
+      top: -0.2rem;
+      left: $tokens-gap;
+
+      width: calc(100% - 8rem);
+      height: calc(100% + 0.4rem);
+
+      background-color: $bg-cl-prm;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    width: 6rem;
+  }
+
+  &__name {
+    position: relative;
+
+    margin: 1.7rem auto 0.2rem;
+
+    font-family: $semibold-font;
+    font-size: 2.6rem;
+  }
+
+  &__description {
+    position: relative;
+
+    font-family: $regular-font;
+
+    color: $page-cl;
+
+    cursor: pointer;
+
+    @include for-tablet {
+      font-size: $fs-m;
+    }
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

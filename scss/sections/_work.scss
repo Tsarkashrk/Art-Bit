@@ -1,0 +1,68 @@
+.work {
+  @include block-settings;
+  padding: $mg-bw-sections $pd-hdr-around-mob 2rem;
+
+  &__info {
+    @include d-flex-prm;
+    flex-direction: column;
+
+    padding: $mg-work-section $reset-space;
+
+    @include for-tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__preview {
+    display: flex;
+    justify-content: center;
+    padding-bottom: $mg-work-section;
+
+    @include for-tablet {
+      order: 2;
+    }
+  }
+
+  &__image {
+    width: $full-wd;
+    max-width: 49.7rem;
+
+    @include for-tablet {
+      min-width: 49.7rem;
+      max-width: $full-wd;
+    }
+
+    @include for-desktop {
+      min-width: 69rem;
+    }
+  }
+
+  &__description {
+    font-family: $regular-font;
+    font-size: $fs-m;
+
+    color: $prm-cl;
+
+    @include for-desktop {
+      font-size: $fs-xm;
+    }
+
+    &--primary {
+      margin-bottom: 1.5rem;
+    }
+
+    &--dark {
+      display: block;
+
+      color: $page-cl;
+    }
+
+    &--secondary {
+      margin-bottom: 5rem;
+    }
+
+    &--light {
+      display: block;
+    }
+  }
+}

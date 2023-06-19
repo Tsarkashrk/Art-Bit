@@ -1,0 +1,24 @@
+.text-group {
+
+  &__page {
+    font-family: $regular-font;
+    font-size: $fs-xxs;
+
+    color: $desc-cl;
+
+    @include for-tablet {
+      font-size: $fs-xm;
+    }
+  }
+
+  &__title {
+    font-family: $regular-font;
+    font-size: $fs-m;
+
+    color: $title-cl;
+
+    @include for-tablet {
+      font-size: $fs-xl;
+    }
+  }
+}
